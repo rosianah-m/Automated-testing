@@ -1,0 +1,627 @@
+{
+    "tests":[
+        {
+            "title":"test 1 on registration",
+            "questions": [
+                "hi bot",
+                "2",
+                "Rosianah Musyoka",
+                "Nairobi",
+                "Dagoreti"
+            ],
+            "expectedResponses": [
+                {
+                    "file": "intents.json",
+                    "id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+                    "propert": "welcome_sw",
+					"property": "welcome_en"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "default_prompt_en"
+                },
+                {
+					"file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "county"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "location"
+					},
+					"property": "prompts.promptWithHints"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "UserRegistration"
+					},
+					"property": "conclusion.en"
+                }
+            ]            
+        },
+
+        {
+            "title":"test 2 on registration",
+            "questions": [
+                "hi bot",
+                "2",
+                "Jane Doe Rosianah",
+                "Nairobi",
+                "Dagoreti"
+            ],
+            "expectedResponses": [
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "welcome_en"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "default_prompt_en"
+                },
+                {
+					"file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "county"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "location"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "UserRegistration"
+					},
+					"property": "conclusion.en"
+                }
+            ]            
+        },
+
+        {
+            "title":"test 3 on registration (name)",
+            "questions": [
+                "hi bot",
+                "2",
+                "Jane   Doe",
+                "Nairobi",
+                "Dagoreti"
+            ],
+            "expectedResponses": [
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "welcome_en"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "default_prompt_en"
+                },
+                {
+					"file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "county"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "location"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "UserRegistration"
+					},
+					"property": "conclusion.en"
+                }
+            ]            
+        },
+
+        {
+            "title":"test 4 on registration (name)",
+            "questions": [
+                "hi bot",
+                "2",
+                "R0sianahMusyoka",
+                "Rosianah Musyoka",
+                "Nairobi",
+                "Dagoreti"
+            ],
+            "expectedResponses": [
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "welcome_en"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "default_prompt_en"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "expectedInput[1].messages.en"
+                },
+                {
+					"file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "county"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "location"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "UserRegistration"
+					},
+					"property": "conclusion.en"
+                }
+            ]            
+        },
+
+        {
+            "title":"test 5 on registration(name)",
+            "questions": [
+                "hi bot",
+                "2",
+                "Rosianah",
+                "Rosianah Musyoka",
+                "Nairobi",
+                "Dagoreti"            ],
+            "expectedResponses": [
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "welcome_en"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "default_prompt_en"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "expectedInput[1].messages.en"
+                },
+                {
+					"file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "county"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "location"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "UserRegistration"
+					},
+					"property": "conclusion.en"
+                }
+            ]            
+		},
+		
+		{
+            "title":"test 6 on registration(name)",
+            "questions": [
+                "hi bot",
+                "2",
+                "Jane Mwangi",
+                "Rosianah Musyoka",
+                "Nairobi",
+                "Dagoreti"            ],
+            "expectedResponses": [
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "welcome_en"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "default_prompt_en"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "expectedInput[1].messages.en"
+                },
+                {
+					"file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "county"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "location"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "UserRegistration"
+					},
+					"property": "conclusion.en"
+                }
+            ]            
+        },
+
+        {
+            "title":"test 6 on registration (county)",
+            "questions": [
+                "hi bot",
+                "2",
+                "Rosianah Musyoka",
+                "Homabay",
+                "Homa bay",
+                "Dagoreti"
+            ],
+            "expectedResponses": [
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "welcome_en"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "default_prompt_en"
+                },
+                {
+					"file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "county"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "expectedInput[0].messages.en"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "location"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "UserRegistration"
+					},
+					"property": "conclusion.en"
+                }
+            ]            
+        },
+
+        {
+            "title":"test 7 on registration (county)",
+            "questions": [
+                "hi bot",
+                "2",
+                "Jane Doe Rosianah",
+                "Nairobi county",
+                "Dagoreti"            ],
+            "expectedResponses": [
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "welcome_en"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "default_prompt_en"
+                },
+                {
+					"file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "county"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "location"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "UserRegistration"
+					},
+					"property": "conclusion.en"
+                }
+            ]            
+        },
+
+        {
+            "title":"test 9 on registration (county)",
+            "questions": [
+                "hi bot",
+                "2",
+                "Rosianah Musyoka",
+                "  Nairobi ",
+                "Dagoreti"
+            ],
+            "expectedResponses": [
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "welcome_en"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "default_prompt_en"
+                },
+                {
+					"file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "county"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "location"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "UserRegistration"
+					},
+					"property": "conclusion.en"
+                }
+            ]            
+        },
+
+        {
+            "title":"test 10 on registration (location)",
+            "questions": [
+                "hi bot",
+                "2",
+                "Rosianah Musyoka",
+                "Nairobi",
+                "Dagoreti constituency"
+            ],
+            "expectedResponses": [
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "welcome_en"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "default_prompt_en"
+                },
+                {
+					"file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "county"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "location"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "UserRegistration"
+					},
+					"property": "conclusion.en"
+                }
+            ]            
+        },
+
+        {
+            "title":"test 11 on registration (location)",
+            "questions": [
+                "hi bot",
+                "2",
+                "Rosianah Musyoka",
+                "Homa bay",
+                "Homa bay"
+
+            ],
+            "expectedResponses": [
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "welcome_en"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "default_prompt_en"
+                },
+                {
+					"file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "county"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "location"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "UserRegistration"
+					},
+					"property": "conclusion.en"
+                }
+            ]            
+        },
+
+        {
+            "title":"test 12 on registration (name)",
+            "questions": [
+                "hi bot",
+                "2",
+                "R M",
+                "Nairobi",
+                "Dagoreti"
+            ],
+            "expectedResponses": [
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "welcome_en"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"property": "default_prompt_en"
+                },
+                {
+					"file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "county"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "location"
+					},
+					"property": "prompts.promptIfMissing"
+                },
+                {
+                    "file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "UserRegistration"
+					},
+					"property": "conclusion.en"
+                }
+            ]            
+        }
+
+    ] 
+}

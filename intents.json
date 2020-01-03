@@ -1,0 +1,1811 @@
+[
+  {
+    "name": "Potato Growing",
+    "id": "0fe61bae-de1d-779d-4985-af08664177e1",
+    "type": "advisory",
+    "description_en": "crop advisory",
+    "description_sw": "ushauri wa mazao",
+    "default_prompt_en": "At which stage is your $crop?",
+    "default_prompt_sw": "Je, mmea wako wa $crop uko katika hatua gani??",
+    "unable_to_assist_en": "Unfortunately I am not able to help you at the moment but we are working hard to update our knowledge as often as possible. Please check with us again later.",
+    "unable_to_assist_sw": "Samahani sina uwezo wa kukusaidia kwa sasa lakini ninafanya juhudi mara kwa mara ili kuongeza maarifa yangu iwezekanavyo. Tafadhali jaribu kuwasiliana nasi tena baadaye",
+    "confirm_entity_en": "Did you mean $input which is $description1 or $input which is $description2?",
+    "confirm_entity_sw": "Je, unamaanisha $input ambayo ni $description1 au $input iliyo $description2?",
+    "multiple_primary_entities_en": "We will give you agronomy tips on $crop $name.",
+    "multiple_primary_entities_sw": "$name, nitakupa ushauri ya wataalamu kuhusu mmea wako $crop wako",
+    "no_results_en": "I am sorry $name, I have no information on that yet, I am learning everyday so keep checking back. I can, however, give you more information on $services. Please choose one",
+    "no_results_sw": "Samahani $name, sina habari hiyo bado, ninajifunza kila siku kwa hivyo endelea kuangalia huduma hii kwa mada. Ninaweza kupa mawaidha zaidi kuhusu $services. Tafadhali chagua moja",
+    "conclusion": {
+      "en": "Thank you for using our service $name, we hope this information will help improve your yield. For additional help, call 0709937000",
+      "sw": "Asante kwa kutumia huduma yetu $name, tunatumaini habari hii itasaidia kuboresha mavuno yako. Kwa maelezo zaidi, piga simu kwa 0709937000"
+    },
+    "extendedQuerying": {},
+    "fields": [
+      {
+        "name": "crop",
+        "required": true,
+        "primary": true,
+        "description_en": "the plant itself",
+        "description_sw": "mmea yenyewe",
+        "isQueryable": true,
+        "isProperty": true,
+        "prompts": [
+          {
+            "language": "en",
+            "multiplePrompt": "Which of these crops are you interested in, $entities or all of them?",
+            "singlePrompt": "Is your $crop the crop on your farm you want advisory tips on?",
+            "singleOptionAvailable": "Would you like to continue with $singleProperty or end this conversation?",
+            "multipleSelected": "Great! Starting with $crop, we will give you tips.",
+            "singleSelected": "$crop it is $name!",
+            "confirmationPrompt": "I did not understand your message. Please confirm the crop you would like to get information for.",
+            "promptIfMissing": "Which crop would you like agronomist tips on?",
+            "promptWithHints": "Which of these crops would you like agronomist tips on; $supportedProperties?",
+            "invalidConfirmation": "$name, kindly confirm whether you want to continue with $crop or end conversation",
+            "unsupportedProperty": "You mentioned that you have planted $userProperties. However, I can give information for $supportedProperties at the moment.",
+            "noSupportedProperty": "You mentioned that you have planted $userProperties which I do not have $description for yet.",
+            "introducedProperty": "Have you recently planted $introducedProperty on your farm?"
+          },
+          {
+            "language": "sw",
+            "multiplePrompt": "Ni ipi kati ya mmea haya ungependa kupata ushauri, $entities au wote?",
+            "singlePrompt": "Je, ungependa ushauri kuhusu ukulima bora wa mmea wako wa $hints?",
+            "singleOptionAvailable": "Je, ungependa kupata ushauri kuhusu $singleProperty au kukatiza mazungumzo haya?",
+            "multipleSelected": "Asante $name. Tutaenda kwa njia taratibu kuanzia na $crop.",
+            "singleSelected": "Sawa kabisa $name!",
+            "confirmationPrompt": "Sikuweza kuelewa ujumbe wako. Tafadhali thibitisha mmea ambayo ungependa kupata ushauri",
+            "promptIfMissing": "Ungependa elimu wa mmea gani?",
+            "promptWithHints": "$name, ungependa elimu katika mmea gani kati ya haya; $supportedProperties?",
+            "invalidConfirmation": "$name, naomba ubainishe kama wataka kuendelea na mmea wa $crop au kumaliza majadiliano",
+            "unsupportedProperty": "Ulitueleza ya kwamba umepanda $userProperties lakini kwa sasa nitaweza kukusaidia na elimu ya $supportedProperties.",
+            "noSupportedProperty": "Ulitueleza ya kwamba umepanda $userProperties lakini kwa sasa sina habari kuhusu $description.",
+            "introducedProperty": "Je, umepanda mmea wa $introducedProperty shambani mwako?"
+          }
+        ],
+        "tags": [
+          {
+            "name": "maize"
+          },
+          {
+            "name": "tomatoes"
+          },
+          {
+            "name": "potatoes"
+          },
+          {
+            "name": "mahindi"
+          },
+          {
+            "name": "nyanya"
+          },
+          {
+            "name": "viazi"
+          }
+        ],
+        "expectedInput": [
+          "text"
+        ]
+      },
+      {
+        "name": "week",
+        "required": true,
+        "primary": false,
+        "isQueryable": true,
+        "isProperty": false,
+        "description_en": "week of $input",
+        "description_sw": "wiki ya $input",
+        "prompts": [
+          {
+            "language": "en",
+            "multiplePrompt": "How many weeks ago did you plant your $crop? You can enter '0' if you are yet to plant.",
+            "confirmationPrompt": "Please verify your input. '$input' does not appear to be a valid week of $crop farming?",
+            "promptIfMissing": "How many weeks ago did you plant your $crop? You can enter '0' if you are yet to plant.",
+            "promptWithHints": "How many weeks ago did you plant your $crop? You can enter '0' if you are yet to plant.",
+            "singlePrompt": "",
+            "invalidConfirmation": "",
+            "singleOptionAvailable": "Unfortunately I am only able to help with $supportedProperties. Would you like to select a different stage of $crop $description or end this conversation?",
+            "singleSelected": "",
+            "noSupportedProperty": "",
+            "multipleSelected": ""
+          },
+          {
+            "language": "sw",
+            "multiplePrompt": "Je, ungependa kupata ushauri katika hatua ipi kati ya hizi? $supportedProperties",
+            "confirmationPrompt": "Tafadhali thibitisha ujumbe wako. '$input' haionekani kuwa ni hatua ya upandaji wa $crop?",
+            "promptIfMissing": "Je, ungependa kupata ushauri katika hatua ipi ya kilimo?",
+            "promptWithHints": "Je, ungependa kupata ushauri katika hatua ipi kati ya hizi?; $supportedProperties?",
+            "singlePrompt": "Je, $crop wako katika $singleProperty ya upandaji?",
+            "invalidConfirmation": "",
+            "singleOptionAvailable": "Nasikitika ya kwamba naweza tu kukusaidia na ushauri katika hatua ya $hints sasa hivi.  Je, ungependa kuendelea kwa kuchagua awamu nyingine au kukatiza mazungumzo haya?",
+            "singleSelected": "",
+            "noSupportedProperty": "",
+            "multipleSelected": ""
+          }
+        ],
+        "tags": [
+          {
+            "name": "care"
+          },
+          {
+            "name": "advise"
+          },
+          {
+            "name": "0"
+          },
+          {
+            "name": "2"
+          },
+          {
+            "name": "4"
+          },
+          {
+            "name": "6"
+          },
+          {
+            "name": "8"
+          },
+          {
+            "name": "10"
+          },
+          {
+            "name": "11"
+          },
+          {
+            "name": "12"
+          },
+          {
+            "name": "13"
+          },
+          {
+            "name": "14"
+          },
+          {
+            "name": "15"
+          },
+          {
+            "name": "16"
+          },
+          {
+            "name": "17"
+          },
+          {
+            "name": "1"
+          },
+          {
+            "name": "3"
+          },
+          {
+            "name": "5"
+          },
+          {
+            "name": "7"
+          },
+          {
+            "name": "9"
+          },
+          {
+            "name": "one"
+          },
+          {
+            "name": "two"
+          },
+          {
+            "name": "three"
+          },
+          {
+            "name": "four"
+          },
+          {
+            "name": "five"
+          },
+          {
+            "name": "six"
+          },
+          {
+            "name": "seven"
+          },
+          {
+            "name": "eight"
+          },
+          {
+            "name": "nine"
+          },
+          {
+            "name": "ten"
+          },
+          {
+            "name": "eleven"
+          },
+          {
+            "name": "twelve"
+          },
+          {
+            "name": "thirteen"
+          },
+          {
+            "name": "fourteen"
+          },
+          {
+            "name": "fifteen"
+          },
+          {
+            "name": "sixteen"
+          },
+          {
+            "name": "seventeen"
+          },
+          {
+            "name": "sixth"
+          },
+          {
+            "name": "second"
+          },
+          {
+            "name": "third"
+          },
+          {
+            "name": "fifth"
+          },
+          {
+            "name": "twelfth"
+          },
+          {
+            "name": "sixteenth week onwards"
+          },
+          {
+            "name": "wiki kumi na sita kwenda mbele"
+          },
+          {
+            "name": "fourteenth and fifteenth weeks"
+          },
+          {
+            "name": "wiki ya kumi na nne na kumi na tano"
+          },
+          {
+            "name": "twelfth and thirteenth weeks"
+          },
+          {
+            "name": "wiki ya kumi na mbili na kumi na tatu"
+          },
+          {
+            "name": "wiki ya kumi na kumi na moja"
+          },
+          {
+            "name": "tenth and eleventh weeks"
+          },
+          {
+            "name": "eight and ninth weeks"
+          },
+          {
+            "name": "wiki nane na tisa"
+          },
+          {
+            "name": "eight and ninth weeks"
+          },
+          {
+            "name": "wiki nane na tisa"
+          },
+          {
+            "name": "sixth and seventh weeks"
+          },
+          {
+            "name": "wiki ya sita na saba"
+          },
+          {
+            "name": "fourth and fifth weeks"
+          },
+          {
+            "name": "wiki ya nne na tano"
+          },
+          {
+            "name": "second and third weeks"
+          },
+          {
+            "name": "wiki ya pili na tatu"
+          },
+          {
+            "name": "zero and first weeks"
+          },
+          {
+            "name": "wiki ya sufuri mpaka kwanza"
+          }
+        ],
+        "expectedInput": [
+          "text",
+          "integer"
+        ]
+      }
+    ],
+    "tags": {
+      "en": [
+        "0",
+        "2",
+        "4",
+        "6",
+        "8",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "1",
+        "3",
+        "5",
+        "7",
+        "9",
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "six",
+        "seven",
+        "eight",
+        "nine",
+        "ten",
+        "eleven",
+        "twelve",
+        "thirteen",
+        "fourteen",
+        "fifteen",
+        "sixteen",
+        "seventeen",
+        "tips",
+        "growing",
+        "advisory",
+        "best practices",
+        "agronomy",
+        "advise",
+        "conultation",
+        "consult",
+        "recommendations",
+        "suggestion",
+        "suggested",
+        "guide",
+        "information",
+        "improve",
+        "grow",
+        "week",
+        "potatoes",
+        "first",
+        "second",
+        "third",
+        "fourth",
+        "fifth",
+        "best",
+        "ways",
+        "crop",
+        "care",
+        "planting",
+        "plant"
+      ],
+      "sw": [
+        "0",
+        "2",
+        "4",
+        "6",
+        "8",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "1",
+        "3",
+        "5",
+        "7",
+        "9",
+        "moja",
+        "mbili",
+        "tatu",
+        "nne",
+        "tano",
+        "sita",
+        "saba",
+        "nane",
+        "tisa",
+        "kumi",
+        "kumi na moja",
+        "kumi na mbili",
+        "kumi na tatu",
+        "kumi na nne",
+        "kumi na tano",
+        "kumi na sita",
+        "kumi na saba",
+        "vidokezo",
+        "kukua",
+        "ushauri",
+        "mazoea bora",
+        "agronomy",
+        "shauri",
+        "mashauriano",
+        "shauriana",
+        "pendekezo",
+        "maoni",
+        "mwongozo",
+        "habari",
+        "kuboresha",
+        "kua",
+        "wiki",
+        "viazi",
+        "kwanza",
+        "pili",
+        "tatu",
+        "ya nne",
+        "ya tano",
+        "bora",
+        "maelekezo",
+        "ukulima",
+        "kupanda"
+      ]
+    },
+    "content_options_en": [
+      "$name, you will receive $count messages with best practices for $week of $crop farming."
+    ],
+    "content_options_sw": [
+      "Asante $name, utapokea ujumbe $count fupi yenye mawaidha kutumika katika $week wa ukuliwa wa $crop."
+    ],
+    "system": "false"
+  },
+  {
+    "name": "UserRegistration",
+    "description_en": "on-board user onto platform",
+    "description_sw": "sajili mtumizi katika huduma",
+    "welcome_en": "$greeting. Welcome to our service. Please choose prefered language $languages",
+    "welcome_sw": "$greeting. Karibu katika huduma yetu. Tafadhali chagua lugha inayokufaa $languages",
+    "default_prompt_en": "Welcome to our service, we would like to ask you a few questions for the purpose of registration.",
+    "default_prompt_sw": "Kabla ya kuendelea turuhusu tuulize maswali machache ya kukusajili ili tuweze kukuhudumia vyema.",
+    "unable_to_assist_en": "",
+    "unable_to_assist_sw": "",
+    "confirm_entity_en": "",
+    "confirm_entity_sw": "",
+    "conclusion": {
+      "en": "Congratulations $name! You are now registered to use our service.",
+      "sw": "Hongera $name! Umesajiliwa kutumia huduma yetu."
+    },
+    "fields": [
+      {
+        "name": "name",
+        "required": true,
+        "primary": true,
+        "isProperties": false,
+        "description_en": "what is your full name",
+        "description_sw": "majina yako kamili",
+        "isQueryable": true,
+        "keywordCheck": false,
+        "prompts": [
+          {
+            "language": "en",
+            "multiplePrompt": "",
+            "singlePrompt": "",
+            "singleOptionAvailable": "",
+            "multipleSelected": "",
+            "singleSelected": "",
+            "confirmationPrompt": "The name provided does not appear to be valid. Please correct to proceed",
+            "promptIfMissing": "What is your full name?",
+            "noSupportedProperty": "",
+            "promptWithHints": ""
+          },
+          {
+            "language": "sw",
+            "multiplePrompt": "",
+            "singlePrompt": "",
+            "singleOptionAvailable": "",
+            "multipleSelected": "",
+            "singleSelected": "",
+            "confirmationPrompt": "Jina ulilonipa halikai sawa . Tafadhali sahihisha ili kwendelea kwa huduma yetu",
+            "promptIfMissing": "Tafadhali nisaidie na majina yako kamili",
+            "noSupportedProperty": "",
+            "promptWithHints": ""
+          }
+        ],
+        "tags": [],
+        "expectedInput": [
+          {
+            "format": "alphabeticWithWhiteSpace",
+            "messages": {
+              "en": "I am sorry your $variable should only have letters. Please try again.",
+              "sw": "Samahani haturusi majina yaliyo na nambari. Rudia tena tafadhali."
+            }
+          },
+          {
+            "format": "wordLength",
+            "minLength": 2,
+            "messages": {
+              "en": "Kindly provide at least two names, first name and last name in order to proceed.",
+              "sw": "Tafadhali wasilisha majina angalau mawili ilikuweza kuendelea kwa huduma hii."
+            }
+          }
+        ]
+      },
+      {
+        "name": "county",
+        "required": true,
+        "primary": true,
+        "isQueryable": false,
+        "isProperties": false,
+        "description_en": "county of user",
+        "description_sw": "county ya mteja",
+        "keywordCheck": false,
+        "prompts": [
+          {
+            "language": "en",
+            "multiplePrompt": "",
+            "confirmationPrompt": "Please enter a valid county",
+            "promptIfMissing": "Which county do you live in?",
+            "promptWithHints": "Which of these counties do you live in, $hints?",
+            "singlePrompt": "Which county do you live in, $hints?",
+            "noSupportedProperty": "",
+            "singleOptionAvailable": ""
+          },
+          {
+            "language": "sw",
+            "multiplePrompt": "",
+            "confirmationPrompt": "",
+            "promptIfMissing": "Je, waishi katika kaunti ipi",
+            "promptWithHints": "Je, waishi katika kaunti ipi kati ya zifuatazo? $hints?",
+            "noSupportedProperty": "",
+            "singlePrompt": "Je, waishi katika kaunti ipi, $hints?",
+            "singleOptionAvailable": ""
+          }
+        ],
+        "tags": [],
+        "expectedInput": [
+          {
+            "format": "lookup",
+            "collection": "locations",
+            "type": "file",
+            "field": "county",
+            "messages": {
+              "en": "Please provide a valid input for $variable. The county you have provided is not recognized. Please try again",
+              "sw": "Samahani majibu uliyonipa hayakai sahihi. Kaunti uliyopeana haitambuliki. Tafadhali rudia tena"
+            }
+          },
+          {
+            "format": "length",
+            "minLength": 3,
+            "messages": {
+              "en": "Your $variable is too short. Please try again ",
+              "sw": "Samahani $variable umeweka ni fupi sana. Tafadhali jaribu tena"
+            }
+          }
+        ]
+      },
+      {
+        "name": "location",
+        "required": true,
+        "primary": true,
+        "isQueryable": false,
+        "isProperties": false,
+        "description_en": "location of user",
+        "description_sw": "makao ya user",
+        "keywordCheck": false,
+        "prompts": [
+          {
+            "language": "en",
+            "multiplePrompt": "",
+            "confirmationPrompt": "Please enter a valid location",
+            "promptIfMissing": "Where is your farm located at in $county?",
+            "promptWithHints": "Where is your farm located at in $county?",
+            "singlePrompt": "Where is your farm located at in $county?",
+            "noSupportedProperty": "",
+            "singleOptionAvailable": ""
+          },
+          {
+            "language": "sw",
+            "multiplePrompt": "",
+            "confirmationPrompt": "",
+            "promptIfMissing": "Je, shamba lako liko eno gani katika kaunti ya $county?",
+            "promptWithHints": "Je, shamba lako liko eno gani katika kaunti ya $county?",
+            "noSupportedProperty": "",
+            "singlePrompt": "Je, shamba lako liko eno gani katika kaunti ya $county?",
+            "singleOptionAvailable": ""
+          }
+        ],
+        "tags": [],
+        "expectedInput": [
+          {
+            "format": "length",
+            "minLength": 3,
+            "messages": {
+              "en": "Your $variable is too short. Please try again ",
+              "sw": "Samahani $variable umeweka ni fupi sana. Tafadhali jaribu tena"
+            }
+          }
+        ]
+      },
+      {
+        "name": "telephone",
+        "required": true,
+        "primary": true,
+        "isQueryable": false,
+        "isProperties": false,
+        "description_en": "telephone number",
+        "description_sw": "nambari ya simu",
+        "keywordCheck": false,
+        "prompts": [
+          {
+            "language": "en",
+            "multiplePrompt": "",
+            "confirmationPrompt": "The number you have provided appears incorrect. Please verify and enter again",
+            "promptIfMissing": "Which is your main telephone number?",
+            "promptWithHints": "",
+            "noSupportedProperty": "",
+            "singlePrompt": "Which single telephone number will you be using to access our service?",
+            "singleOptionAvailable": ""
+          },
+          {
+            "language": "sw",
+            "multiplePrompt": "",
+            "confirmationPrompt": "Nambari uliyonipa sio sahihi. Tafadhali rudia kuweka nambari yako ya simu",
+            "promptIfMissing": "Nambari gani ya simu utakayo tumia katika huduma hii?",
+            "promptWithHints": "",
+            "noSupportedProperty": "",
+            "singlePrompt": "Je, nambari gani ya simu utakayo tumia kuzuru huduma hii?",
+            "singleOptionAvailable": ""
+          }
+        ],
+        "tags": [],
+        "expectedInput": [
+          {
+            "format": "numeric",
+            "messages": {
+              "en": "Your $variable should only contain numbers. Please try again ",
+              "sw": "Samahani tunatarajia $variable iwe nambari pekee. Tafadhali jaribu tena"
+            }
+          },
+          {
+            "format": "length",
+            "minLength": 10,
+            "maxLength": 10,
+            "messages": {
+              "en": "Your $variable shoud only contain 10 digits. Please try again",
+              "sw": "Samahani $variable umeweka sio sahihi. Tafadhali jaribu tena"
+            }
+          },
+          {
+            "format": "prefix",
+            "minLength": 2,
+            "pattern": "07",
+            "messages": {
+              "en": "I'm sorry the number you have provided is incorrect. Kindly provide a 10-digit number with the prefix 07",
+              "sw": "Samahani nambari uliopeana sio sahihi. Tafadhali peana numbari iliyo na herufi 10 na inayoanza na 07"
+            }
+          }
+        ]
+      },
+      {
+        "name": "landsize",
+        "required": true,
+        "primary": true,
+        "isQueryable": false,
+        "isProperties": false,
+        "description_en": "size in farm in hectares",
+        "description_sw": "ukwa wa shamba kwa hekari",
+        "keywordCheck": false,
+        "prompts": [
+          {
+            "language": "en",
+            "multiplePrompt": "",
+            "confirmationPrompt": "",
+            "promptIfMissing": "What is the size of your farm in acres?",
+            "promptWithHints": "",
+            "noSupportedProperty": "",
+            "singlePrompt": "What is the size of your farm in acres?",
+            "singleOptionAvailable": ""
+          },
+          {
+            "language": "sw",
+            "multiplePrompt": "",
+            "confirmationPrompt": "",
+            "promptIfMissing": "Je, shamba lako ni hekari ngapi?",
+            "promptWithHints": "",
+            "noSupportedProperty": "",
+            "singlePrompt": "Je, shamba lako ni hekari ngapi?",
+            "singleOptionAvailable": ""
+          }
+        ],
+        "tags": [],
+        "expectedInput": [
+          {
+            "format": "length",
+            "minLength": 1,
+            "messages": {
+              "en": "Your $variable is required. Please try again",
+              "sw": "Samahani $variable inatakikana. Tafadhali jaribu tena"
+            }
+          }
+        ]
+      },
+      {
+        "name": "crop",
+        "required": true,
+        "primary": true,
+        "isQueryable": false,
+        "isProperties": true,
+        "description_en": "crops planted in farm",
+        "description_sw": "mmea ambayo imepandwa shambani",
+        "keywordCheck": true,
+        "prompts": [
+          {
+            "language": "en",
+            "multiplePrompt": "",
+            "confirmationPrompt": "",
+            "promptIfMissing": "Which crops have you planted on your farm?",
+            "promptWithHints": "",
+            "noSupportedProperty": "",
+            "singlePrompt": "Which crops have you planted on your farm?",
+            "singleOptionAvailable": ""
+          },
+          {
+            "language": "sw",
+            "multiplePrompt": "",
+            "confirmationPrompt": "",
+            "promptIfMissing": "Je, umepanda mmea gani shambani mwako?",
+            "promptWithHints": "",
+            "noSupportedProperty": "",
+            "singlePrompt": "Je, umepanda mmea gani shambani mwako?",
+            "singleOptionAvailable": ""
+          }
+        ],
+        "tags": [],
+        "expectedInput": [
+          {
+            "format": "length",
+            "minLength": 4
+          }
+        ]
+      }
+    ],
+    "query_options_en": [],
+    "query_options_sw": [],
+    "system": true,
+    "id": "e9425bb2-eb68-b709-169d-a01c787579ee"
+  },
+  {
+    "name": "Feedback",
+    "type": "correspondence",
+    "description_en": "feedback",
+    "description_sw": "maoni",
+    "default_prompt_en": "Please type your question",
+    "default_prompt_sw": "Tafadhali andika swali lako?",
+    "unable_to_assist_en": "Unfortunately I am not able to help you at the moment but we are working hard to update our product database as often as possible. Please check with us again later.",
+    "unable_to_assist_sw": "Samahani sina uwezo wa kukusaidia kwa sasa lakini ninafanya juhudi mara kwa mara ili kuongeza habari ya bidhaa zetu haraka iwezekanavyo. Tafadhali jaribu kuwasiliana nasi tena baadaye",
+    "confirm_entity_en": "",
+    "confirm_entity_sw": "",
+    "no_results_en": "I am sorry $name that I did not have what you were looking for, I am learning everyday so keep checking back. Please choose from <1. MAIN MENU>, or <2. $currentServices> ",
+    "no_results_sw": "Samahani $name, sina habari hiyo bado, ninajifunza kila siku kwa hivyo endelea kuangalia huduma hii kwa mada. Please choose from <1. MAIN MENU>, or <2. $currentServices> ",
+    "multiple_attributes_en": "Did you want information on: $searchResults",
+    "multiple_attributes_sw": "Je, ulitaka habari kuhusu: $searchResults",
+    "multiple_attributes_hint_en": "You can now enter the number or type the item you’d like more information on.",
+    "multiple_attributes_hint_sw": "Sasa unaweza kuchagua nambari unayopenda habari zaidi.",
+    "multiple_primary_entities_en": "",
+    "multiple_primary_entities_sw": "",
+    "no_match_en": "no match",
+    "no_match_sw": "hakuna nilichotaka",
+    "hint_en": "I can answer questions on many topics. Ask me about fertilizers, herbicides, insecticides, planting protocols, spraying protocol, product prices, and more.",
+    "hint_sw": "Naweza kujibu maswali kwenye mada nyingi. Niulize juu ya mbolea, dawa za wadudu, itifaki za upandaji, itifaki ya kunyunyizia dawa, bei ya bidhaa, na zaidi.",
+    "conclusion": {
+      "en": "Thank you for using our service $name, we hope this information will help improve your yield. For additional help, contact your nearest agrovet",
+      "sw": "Asante kwa kutumia huduma yetu $name, tunatumaini habari hii itasaidia kuboresha mavuno yako. Kwa maelezo zaidi, wasiliana na duka la kilimo iliyo karibu nawe"
+    },
+    "extendedQuerying": {},
+    "fields": [
+      {
+        "name": "subject",
+        "required": true,
+        "primary": true,
+        "description_en": "section of interest",
+        "description_sw": "sehemu iliyopendekzwa",
+        "isQueryable": true,
+        "isProperty": true,
+        "prompts": [
+          {
+            "language": "en",
+            "multiplePrompt": "",
+            "singlePrompt": "",
+            "singleOptionAvailable": "",
+            "multipleSelected": "",
+            "singleSelected": "",
+            "confirmationPrompt": "I did not understand your message. Please confirm the subject you would like to give feedback on.",
+            "promptIfMissing": "",
+            "promptWithHints": "Which of these subjects would you like to give feedback on; $supportedProperties?",
+            "invalidConfirmation": "$name, kindly confirm whether you want to continue with $crop or end conversation",
+            "unsupportedProperty": "",
+            "noSupportedProperty": "",
+            "introducedProperty": "",
+            "hint": "I will now give you a chance to choose which area you would like to give us feedback on."
+          },
+          {
+            "language": "sw",
+            "multiplePrompt": "",
+            "singlePrompt": "",
+            "singleOptionAvailable": "",
+            "multipleSelected": "",
+            "singleSelected": "",
+            "confirmationPrompt": "Sikuweza kuelewa ujumbe wako. Tafadhali thibitisha sehemu ambayo ungependa kupeana maoni",
+            "promptIfMissing": "",
+            "promptWithHints": "$name, ungependa kupeana maoni katika sehemu gani kati ya haya; $supportedProperties?",
+            "invalidConfirmation": "",
+            "unsupportedProperty": "",
+            "noSupportedProperty": "",
+            "introducedProperty": "",
+            "hint": "Sasa nitakupa nafasi ya kuchagua ni eneo gani ungependa kutupa maoni juu ya."
+          }
+        ],
+        "tags": [
+          {
+            "name": "potatoes"
+          },
+          {
+            "name": "viazi"
+          }
+        ],
+        "expectedInput": [
+          "text"
+        ]
+      },
+      {
+        "name": "user feedback",
+        "required": true,
+        "primary": false,
+        "description_en": "user input",
+        "description_sw": "maoni ya mtumizi",
+        "isQueryable": false,
+        "isProperty": false,
+        "prompts": [
+          {
+            "language": "en",
+            "multiplePrompt": "Which of these group of products are you interested in, $entities or all of them?",
+            "singlePrompt": "Please type your question?",
+            "singleOptionAvailable": "We currently have $singleProperty that would match your intestest. Would you like to go through the list or end this conversation?",
+            "multipleSelected": "Great! Starting with $cluster, we will give you product information.",
+            "singleSelected": "$cluster it is $name!",
+            "confirmationPrompt": "I did not understand your message. Please confirm the group of chemicals you would like to get information for.",
+            "promptIfMissing": "Please type your question",
+            "promptWithHints": "Please enter your feedback",
+            "noSupportedProperty": "",
+            "invalidConfirmation": "$name, kindly confirm whether you want to continue with $cluster or end conversation",
+            "hint": "To get good results, please ensure that your question describes the item you are seeking information on."
+          },
+          {
+            "language": "sw",
+            "multiplePrompt": "Ni ipi kati ya mmea haya ungependa kupata ushauri, $entities au wote?",
+            "singlePrompt": "Je, ungependa ushauri kuhusu ukulima bora wa mmea wako wa $hints?",
+            "singleOptionAvailable": "Je, ungependa kupata ushauri kuhusu $singleProperty au kukatiza mazungumzo haya?",
+            "multipleSelected": "Asante $name. Tutaenda kwa njia taratibu kuanzia na $crop.",
+            "singleSelected": "Sawa kabisa $name!",
+            "confirmationPrompt": "Sikuweza kuelewa ujumbe wako. Tafadhali thibitisha mmea ambayo ungependa kupata ushauri",
+            "promptIfMissing": "Ungependa elimu wa mmea gani?",
+            "promptWithHints": "Tafadhali andika maoni yako",
+            "invalidConfirmation": "$name, naomba ubainishe kama wataka kuendelea na mmea wa $crop au kumaliza majadiliano?",
+            "noSupportedProperty": "",
+            "unsupportedProperty": "Ulitueleza ya kwamba umepanda $userProperties lakini kwa sasa nitaweza kukusaidia na elimu ya $supportedProperties.",
+            "introducedProperty": "Je, umepanda mmea wa $introducedProperty shambani mwako?",
+            "hint": "Ili kupata matokeo mazuri, tafadhali hakikisha kwamba swali lako linaelezea zaidi kile ambacho ungependa kupata ushauri."
+          }
+        ]
+      }
+    ],
+    "tags": {},
+    "content_options_en": [
+      "$name, you will receive $count message(s) with matching products"
+    ],
+    "content_options_sw": [
+      "Asante $name, utapokea ujumbe $count fupi yenye mawaidha bidhaa "
+    ],
+    "system": "false",
+    "id": "32381b26-f39c-4e25-9f8d-014a419b309a"
+  },
+  {
+    "name": "Report Occurrence",
+    "description_en": "diagnosis",
+    "description_sw": " utambuzi",
+    "default_prompt_en": " Which part of your $crop is affected, what do you see on the most affected part?",
+    "default_prompt_sw": "Je, sehemu gani ya $crop yako iliyoathirika na unaona dalili gani kwenye sehemu hiyo?",
+    "unable_to_assist_en": "Unfortunately I am not able to help you at the moment but we are working hard to update our knowledge as often as possible. Please check with us again later.",
+    "unable_to_assist_sw": "Samahani sina uwezo wa kukusaidia kwa sasa lakini ninafanya juhudi mara kwa mara ili kuongeza maarifa yangu iwezekanavyo. Tafadhali jaribu kuwasiliana nasi tena baadaye",
+    "confirm_entity_en": "Did you mean $input which is $description1 or $input which is $description2?",
+    "confirm_entity_sw": "Je, unamaanisha $input ambayo ni $description1 au $input iliyo $description2?",
+    "multiple_primary_entities_en": "Let us now try to find out what is ailing your $crop $name.",
+    "multiple_primary_entities_sw": "$name, tutajaribu kuangalia kinachoathiri $crop wako",
+    "no_results_en": "I am sorry $name, I have no information on that yet, I am learning everyday so keep checking back. Please choose from <1. MAIN MENU>, or <2. $currentServices>.",
+    "no_results_sw": "Samahani $name, sina habari hiyo bado, ninajifunza kila siku kwa hivyo endelea kuangalia huduma hii kwa mada. Tafadhali chagua kati ya <1. MENU KUU>, au <2. $currentServices>",
+    "multiple_results_en": "I am unable to tell what is ailing your crops so I will give you the most probable problems.",
+    "multiple_results_sw": "Siwezi kusema ni nini kinachoua mazao yako kwa hivyo nitakupa shida zinazowezekana",
+    "hint_en": "I will now ask several questions to help me understand the problem",
+    "hint_sw": "",
+    "conclusion": {
+      "en": "Thank you for using our service.",
+      "sw": "Asante kwa kutumia huduma wetu."
+    },
+    "extendedQuerying": {
+      "en": "Please describe for me any other symptoms you are seeing on your crop.",
+      "sw": "Tafadhali nieleze jambo lingine ambalo onaona kwenye mmea wako wa crop."
+    },
+    "fields": [
+      {
+        "name": "crop",
+        "required": true,
+        "primary": true,
+        "description_en": "affected crop",
+        "description_sw": "mmea iliyoathiriwa",
+        "isQueryable": true,
+        "isProperty": true,
+        "prompts": [
+          {
+            "language": "en",
+            "multiplePrompt": "Which of these crops is affected, $entities or all of them?",
+            "singlePrompt": "Is your $hints the affected crop on your farm?",
+            "singleOptionAvailable": "Would you like to continue with $singleProperty or end this conversation?",
+            "multipleSelected": "Oh nooo! We will walk through all your crops starting with $crop to try find out what is ailing them.",
+            "singleSelected": "I'm glad that your other crop are okay.",
+            "confirmationPrompt": "I'm sorry $name, your input does not appear to be correct. Please confirm the affected crop from these $supportedProperties.",
+            "promptIfMissing": "Which crop do you have on your farm?",
+            "promptWithHints": "Please select the crop, choose from $supportedProperties",
+            "invalidConfirmation": "$name, kindly confirm whether you want to continue with $crop or end conversation",
+            "unsupportedProperty": "You mentioned that you have planted $userProperties. However, I can only help you with $supportedProperties at the moment.",
+            "noSupportedProperty": "You mentioned that you have planted $userProperties which I do not have $description for yet.",
+            "introducedProperty": "Have you recently planted $introducedProperty on your farm?",
+            "hint": "I will now ask you which one of your crop is affected among the crops that are supported"
+          },
+          {
+            "language": "sw",
+            "multiplePrompt": "Mimea gani kati ya haya ambayo ni walioathirika, $entities au wote?",
+            "singlePrompt": "Je, mmea wako wa $hints ndiyo umeathirika katika shamba lako?",
+            "singleOptionAvailable": "Je, ungependa kuendelea na $singleProperty au kukatiza mazungumzo haya?",
+            "multipleSelected": "Pole kwa masaibu ambayo yamekumba mimea wako. Tutaenda kwa njia taratibu kuanzia na $crop ili kujaribu kupata nini kinachowaathiri.",
+            "singleSelected": "Ni vywema kwamba mmea yako mengine hawajaathirika!",
+            "confirmationPrompt": "Sikuweza kuelewa ujumbe wako. Tafadhali thibitisha mmea ambayo una kwenye shamba lako",
+            "promptIfMissing": "Umepanda mmea gani katika shamba lako?",
+            "promptWithHints": "Tafadhali chagua mmea iliyoathirika kati ya $supportedProperties?",
+            "invalidConfirmation": "$name, naomba ubainishe kama wataka kuendelea na mmea wa $crop au kumaliza majadiliano",
+            "unsupportedProperty": "Ulitueleza ya kwamba umepanda $userProperties lakini kwa sasa nitaweza kukusaidia na magonjwa ya $supportedProperties.",
+            "noSupportedProperty": "Ulitueleza ya kwamba umepanda $userProperties lakini kwa sasa sina habari kuhusu $description.",
+            "introducedProperty": "Je, umepanda mmea wa $introducedProperty shambani mwako?",
+            "hint": "Sasa ningependa kuuliza ni mmea gani imeathiriwa kati ya mimea ambayo yanawakilishwa"
+          }
+        ],
+        "tags": [
+          {
+            "name": "maize"
+          },
+          {
+            "name": "tomatoes"
+          },
+          {
+            "name": "potatoes"
+          },
+          {
+            "name": "mahindi"
+          },
+          {
+            "name": "nyanya"
+          },
+          {
+            "name": "viazi"
+          }
+        ],
+        "expectedInput": [
+          "text"
+        ]
+      },
+      {
+        "name": "part",
+        "required": true,
+        "primary": false,
+        "isQueryable": true,
+        "isProperty": false,
+        "description_en": "affected part of crop",
+        "description_sw": "sehemu au zao iliyoathirika kwa mmea",
+        "prompts": [
+          {
+            "language": "en",
+            "multiplePrompt": "Which part of your crop is affected? $supportedProperties",
+            "confirmationPrompt": "I'm sorry $name, your input does not appear to be correct. Please choose from $supportedProperties.",
+            "promptIfMissing": "Please select affected part of your $crop, choose from $supportedProperties. ",
+            "promptWithHints": "Please select affected part of your $crop, choose from $supportedProperties. ",
+            "singlePrompt": "Is your $singleProperty the affected crop on your farm?. ",
+            "invalidConfirmation": "",
+            "singleOptionAvailable": "Unfortunately I am only able to help with $hints. Would you like to select a different part of $crop or end this conversation?",
+            "noSupportedProperty": "",
+            "singleSelected": "",
+            "multipleSelected": "",
+            "hint": "It will be good to know which part of the crop is affected so that we can easily find the problem"
+          },
+          {
+            "language": "sw",
+            "multiplePrompt": "Ni sehemu gani ya mazao yako yanayoathirika? $supportedProperties",
+            "confirmationPrompt": "Tafadhali thibitisha ujumbe wako. '$input' haionekani kuwa ni sehemu ya $crop?",
+            "promptIfMissing": "Tafadhali chagua sehemu ya $crop iliyoathirika kati ya $supportedProperties",
+            "promptWithHints": "Tafadhali chagua sehemu ya $crop iliyoathirika kati ya $supportedProperties",
+            "singlePrompt": "Je, ni $singleProperty ndio sehemu ambayo imeathirika kwenye $crop yako?",
+            "invalidConfirmation": "",
+            "singleOptionAvailable": "Nasikitika ya kwamba naweza tu kukusaidia na magonjwa katika $hints sasa hivi.  Je, ungependa kuendelea kwa kuchagua sehemu nyingine au kukatiza mazungumzo haya?",
+            "singleSelected": "",
+            "noSupportedProperty": "",
+            "multipleSelected": "",
+            "hint": "Itakuwa vizuri kujua ni sehemu ipi ya mmea wako iliyoathiriwa ili tuweze kupata shida kwa urahisi"
+          }
+        ],
+        "tags": [
+          {
+            "name": "leaf"
+          },
+          {
+            "name": "root"
+          },
+          {
+            "name": "stem"
+          },
+          {
+            "name": "stalk"
+          },
+          {
+            "name": "fruit"
+          },
+          {
+            "name": "cob"
+          },
+          {
+            "name": "zao"
+          },
+          {
+            "name": "tuber"
+          },
+          {
+            "name": "bean"
+          },
+          {
+            "name": "pod"
+          },
+          {
+            "name": "nut"
+          },
+          {
+            "name": "potato"
+          },
+          {
+            "name": "jani"
+          },
+          {
+            "name": "shina"
+          },
+          {
+            "name": "stem"
+          },
+          {
+            "name": "mzizi"
+          },
+          {
+            "name": "tunda"
+          },
+          {
+            "name": "gunzi"
+          },
+          {
+            "name": "kiazi"
+          },
+          {
+            "name": "maharagwe"
+          },
+          {
+            "name": "tumba"
+          },
+          {
+            "name": "mbegu"
+          },
+          {
+            "name": "head"
+          },
+          {
+            "name": "mazao"
+          }
+        ],
+        "expectedInput": [
+          "text"
+        ]
+      },
+      {
+        "name": "symptoms",
+        "required": true,
+        "primary": false,
+        "isQueryable": false,
+        "isProperty": false,
+        "description_en": "symptom of disease or pest",
+        "description_sw": "ishara au dalili ya ugonjwa au wadudu",
+        "prompts": [
+          {
+            "language": "en",
+            "multiplePrompt": "Please describe the symptoms you are seeing",
+            "confirmationPrompt": "I'm sorry $name, I may not have understood your input correctly. Do you mind rephrasing?",
+            "promptIfMissing": "Please enter the symptoms you are seeing",
+            "promptWithHints": "Please enter the symptoms you are seeing",
+            "singlePrompt": "Please enter the symptoms you are seeing",
+            "invalidConfirmation": "",
+            "singleOptionAvailable": "Unfortunately I am only able to help with $hints. Would you like to select a different part of $crop or end this conversation?",
+            "noSupportedProperty": "",
+            "singleSelected": "",
+            "multipleSelected": "",
+            "hint": "You can now enter the problems you are seeing with your plants"
+          },
+          {
+            "language": "sw",
+            "multiplePrompt": "Tafadhali andika dalili au ishara unayoyaona kwa mmea iliyoathirika",
+            "confirmationPrompt": "Tafadhali thibitisha ujumbe wako. '$input' haionekani kuwa ni sehemu ya $crop?",
+            "promptIfMissing": "Tafadhali andika dalili au ishara unayoyaona kwa mmea iliyoathirika",
+            "promptWithHints": "Tafadhali andika dalili au ishara unayoyaona kwa mmea iliyoathirika",
+            "singlePrompt": "Tafadhali andika dalili au ishara unayoyaona kwa mmea iliyoathirika",
+            "invalidConfirmation": "",
+            "singleOptionAvailable": "Nasikitika ya kwamba naweza tu kukusaidia na magonjwa katika $hints sasa hivi.  Je, ungependa kuendelea kwa kuchagua sehemu nyingine au kukatiza mazungumzo haya?",
+            "singleSelected": "",
+            "noSupportedProperty": "",
+            "multipleSelected": "",
+            "hint": "Sasa unaweza kuandika shida unazoona na mimea yako"
+          }
+        ],
+        "tags": [],
+        "expectedInput": [
+          "text"
+        ]
+      }
+    ],
+    "query_options_en": [
+      "Have you noticed $symptoms?",
+      "Do you see $symptoms?",
+      "Do your crops have $symptoms?",
+      "Are there any $symptoms?"
+    ],
+    "query_options_sw": [
+      "Je, umeona $symptoms?",
+      "Je waona $symptoms?",
+      "Je kuna $symptoms?",
+      "Je, unashuhudia $symptoms?"
+    ],
+    "tags": {
+      "en": [
+        "identify",
+        "pest",
+        "pests",
+        "black",
+        "base",
+        "blade",
+        "blemish",
+        "brown",
+        "caterpillar",
+        "chewed",
+        "crop",
+        "cob",
+        "crown",
+        "deep",
+        "destroyed",
+        "die",
+        "dot",
+        "drying",
+        "dust",
+        "dying",
+        "falling",
+        "farm",
+        "field",
+        "frond",
+        "grain",
+        "grey",
+        "greyish",
+        "grown",
+        "greyish-brown",
+        "growth",
+        "harvest",
+        "harvested",
+        "hole",
+        "hollow",
+        "infection",
+        "insect",
+        "kernel",
+        "leaf",
+        "leaves",
+        "line",
+        "mature",
+        "mould",
+        "mushroom-like",
+        "narrow",
+        "needle",
+        "old",
+        "orange",
+        "petal",
+        "pink",
+        "plant",
+        "powder",
+        "purple",
+        "ragged",
+        "ready",
+        "rectangular",
+        "red",
+        "root",
+        "rot",
+        "rotting",
+        "seed",
+        "seedlings",
+        "spot",
+        "spots",
+        "stalk",
+        "stem",
+        "storage",
+        "streak",
+        "tassel",
+        "thin",
+        "top",
+        "tunnel",
+        "white",
+        "worm",
+        "yellow",
+        "young",
+        "maize",
+        "corn",
+        "zea mays",
+        "cassava",
+        "manioc",
+        "beans",
+        "soya",
+        "soybean",
+        "soya bean",
+        "groundnuts",
+        "peanut",
+        "cabbage",
+        "tomato",
+        "rapeseed",
+        "colza",
+        "rape",
+        "potato",
+        "potatoes",
+        "tater",
+        "bug",
+        "chou",
+        "tuber",
+        "mines",
+        "patterns",
+        "clear",
+        "transparent",
+        "discolouration",
+        "flies",
+        "wilt",
+        "wilting",
+        "soot",
+        "stunted",
+        "roll",
+        "rolled",
+        "sore",
+        "sore",
+        "curled",
+        "curly",
+        "identification",
+        "disease",
+        "treat",
+        "aphids",
+        "mites",
+        "diagnosis",
+        "moth",
+        "nematode",
+        "late blite",
+        "early blight",
+        "cutworms",
+        "weevils",
+        "fusarium ear rot",
+        "stalk borer",
+        "maize streak virus",
+        "armyworms",
+        "grey leaf spot",
+        "large grain borer",
+        "common smut",
+        "wireworm",
+        "curling",
+        "web",
+        "white grubs"
+      ],
+      "sw": [
+        "magonjwa",
+        "ambaziko",
+        "anguka",
+        "bisi",
+        "bua",
+        "bungu",
+        "buu",
+        "chafi",
+        "changa",
+        "chechele",
+        "chini",
+        "doa",
+        "doadoa",
+        "dudu",
+        "dutu",
+        "fukusi",
+        "funza",
+        "gala",
+        "gofu",
+        "gunzi",
+        "hali isiyo ya kawaida",
+        "handaki",
+        "haribika",
+        "hindi",
+        "imekomaa",
+        "inama",
+        "jani",
+        "kahawa",
+        "kahawia",
+        "kata",
+        "katikati",
+        "kauka",
+        "kawahia",
+        "kichwa",
+        "kidungadunga",
+        "kifundo",
+        "kijivu",
+        "kiluwi",
+        "kipukusa",
+        "kiwavi",
+        "komaa",
+        "kombo",
+        "konda",
+        "kufa",
+        "kulika",
+        "kulwa",
+        "kutambua",
+        "kuvu",
+        "lala",
+        "mabaka",
+        "madoadoa",
+        "majani",
+        "manjano",
+        "mashimo",
+        "matawi",
+        "megu",
+        "mche",
+        "mdudu",
+        "mfuo",
+        "miche",
+        "minyoo",
+        "mistari",
+        "mistatili",
+        "mitaro",
+        "mkoba",
+        "mnyoo",
+        "msingi",
+        "mstari",
+        "msururu",
+        "mti wa wa mahindi",
+        "mzizi",
+        "nafaka",
+        "ndogo",
+        "njano",
+        "nyembamba",
+        "nyeupe",
+        "nyeusi",
+        "nyugunyugu",
+        "oza",
+        "pandikizo",
+        "pinduka",
+        "poda",
+        "shada",
+        "shambani",
+        "shimo",
+        "shina",
+        "tafunika",
+        "tafunwa",
+        "tunda",
+        "udhurungi",
+        "ukindu",
+        "umba",
+        "unga",
+        "uzao",
+        "vichunguu",
+        "vumbi",
+        "vunjifi",
+        "vunwa",
+        "wadudu",
+        "weupe",
+        "weusi",
+        "zambarau",
+        "mahindi",
+        "maharagwe",
+        "njugu",
+        "karanga",
+        "kabichi",
+        "nyanya",
+        "viazi",
+        "waru",
+        "mbatata",
+        "fifia",
+        "kunjana"
+      ]
+    },
+    "type": "diagnostic",
+    "id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+    "live": "true",
+    "system": "false"
+  },
+  {
+    "name": "Default",
+    "intro_en": "Good $timeofday $name, welcome back. ",
+    "intro_sw": "Habari za $timeofday $name na karibu tena.",
+    "intro_tail_en": "Please choose from $services",
+    "intro_tail_sw": "Tafadhali chagua kati ya haya $services",
+    "intro_services_en": "I'm sorry $name, I can only help with $services at the moment. Please choose one",
+    "intro_services_sw": "Samahani $name, ninaweza kukusaidia na $services. Tafadhali chagua moja",
+    "reset_conversation_en": "Previous conversation has been cleared, you can now start afresh",
+    "reset_conversation_sw": "Majadiliano ya awali umefutiliwa, sasa unaweza kwanza upya",
+    "index_outof_range_en": "Sorry $name, the option you selected does not exist among $suggestedOptions. You can only choose between 1 and $lastIndex.",
+    "index_outof_range_sw": "Samahani $name, chaguo lako halikupatikana kati ya $suggestedOptions. Unaweza kuchagua kutoka nambari 1 hadi $lastIndex.",
+    "tags_sw": [],
+    "tags_en": [],
+    "hint_en": "I will always welcome you with the message above",
+    "hint_sw": "Nitakuwa nakukaribisha na ujumbe huo kila wakati",
+    "back_menu_en": "Which section or step would you like to go back to $name: $menuItems?",
+    "back_menu_sw": "Je! ungependa kurudi nyuma katika sehemu au kiwango gani $name: $menuItems?",
+    "back_button_en": "go back",
+    "back_button_sw": "rudi nyuma",
+    "main_menu_en": "Main Menu",
+    "main_menu_sw": "Menu Kuu",
+    "endConversation": [
+      {
+        "language": "en",
+        "text": "That is all I have for you on $currentTopic at the moment $name. Please choose from <1. MAIN MENU>, or <2. $currentServices> if you would like more information this $timeofday",
+        "hint": "You can now choose to do another $currentServices or return to the main menu"
+      },
+      {
+        "language": "en",
+        "text": "Thank you $name, Please choose <1. MAIN MENU>, or <2. $currentServices>",
+        "hint": "You can now choose to do another $currentServices or return to the main menu"
+      },
+      {
+        "language": "sw",
+        "text": "Ni hayo tu kwa sasa kuhusu $currentTopic $name.Tafadhali chagua <1. MAIN KUU>, au <2. $currentServices> iwapo ungependa ushauri zaidi",
+        "hint": "Kwa sasa unaweza rudia $currentServices tena au rudi kwa menu kuu"
+      },
+      {
+        "language": "sw",
+        "text": "Shukran $name,tafadhali chagua <1. MENU KUU>, au <2. $currentServices>",
+        "hint": "Kwa sasa unaweza rudia $currentServices tena au rudi kwa menu kuu"
+      }
+    ],
+    "system": true,
+    "id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4"
+  },
+  {
+    "name": "Information",
+    "type": "advisory",
+    "description_en": "information",
+    "description_sw": "habari",
+    "default_prompt_en": "Please type your question",
+    "default_prompt_sw": "Tafadhali andika swali lako?",
+    "unable_to_assist_en": "Unfortunately I am not able to help you at the moment but we are working hard to update our product database as often as possible. Please check with us again later.",
+    "unable_to_assist_sw": "Samahani sina uwezo wa kukusaidia kwa sasa lakini ninafanya juhudi mara kwa mara ili kuongeza habari ya bidhaa zetu haraka iwezekanavyo. Tafadhali jaribu kuwasiliana nasi tena baadaye",
+    "confirm_entity_en": "",
+    "confirm_entity_sw": "",
+    "no_results_en": "I am sorry $name that I did not have what you were looking for, I am learning everyday so keep checking back. Please choose from <1. MAIN MENU>, or <2. $currentServices> ",
+    "no_results_sw": "Samahani $name, sina habari hiyo bado, ninajifunza kila siku kwa hivyo endelea kuangalia huduma hii kwa mada. Please choose from <1. MAIN MENU>, or <2. $currentServices> ",
+    "multiple_attributes_en": "Did you want information on: $searchResults",
+    "multiple_attributes_sw": "Je, ulitaka habari kuhusu: $searchResults",
+    "multiple_attributes_hint_en": "You can now enter the number or type the item you’d like more information on.",
+    "multiple_attributes_hint_sw": "Sasa unaweza kuchagua nambari unayopenda habari zaidi.",
+    "multiple_primary_entities_en": "",
+    "multiple_primary_entities_sw": "",
+    "no_match_en": "no match",
+    "no_match_sw": "hakuna nilichotaka",
+    "hint_en": "I can answer questions on many topics. Ask me about fertilizers, herbicides, insecticides, planting protocols, spraying protocol, product prices, and more.",
+    "hint_sw": "Naweza kujibu maswali kwenye mada nyingi. Niulize juu ya mbolea, dawa za wadudu, itifaki za upandaji, itifaki ya kunyunyizia dawa, bei ya bidhaa, na zaidi.",
+    "hint_good_search_en": "congratulations! that was a good search.",
+    "hint_good_search_sw": "pongezi! huo ulikuwa utaftaji mzuri.",
+    "hint_bad_search_en": "$name,to get better results,please ensure that your search question or input describes well what you are looking for.",
+    "hint_bad_search_sw": "$name, kupata matokeo bora, unaweza kujaribu kuongeza maelezo zaidi kwa swali lako la utaftaji.",
+    "hint_good_example_en": "$name, here are examples of good search questions/input;<What fertilizer do I apply when my potatoes are in the 6th week?>,<Tell me how to apply the herbicide LINAGAN on my potatoes> and <Is Naivasha a suitable area for growing potatoes?>.",
+    "hint_good_example_sw": "$name, hapa kuna mifano ya maswali mazuri ya kutafuta / pembejeo; <Mbolea gani ya kutumia wakati viazi yangu iko katika wiki ya 6? Nielezee jinsi ya kutumia dawa ya magugu iitwayo LINAGAN> na <Je?, mji wa Naivasha ni eneo bora kwa kukuza viazi.",
+    "hint_bad_example_en": "$name, here are examples of a bad search questions/input;<Fertilizer for my potatoes>,<What herbicides are used?> and <which are good areas?>.",
+    "hint_bad_example_sw": "$name, hapa kuna mifano ya maswali yasiyo mazuri ya utafutaji/pembejo;<mbolea ya viazi yangu>,<dawa gani ya kuangamiza magugu inatumika?> and <Maeneo gani mazuri?>.",
+    "conclusion": {
+      "en": "Thank you for using our service $name, we hope this information will help improve your yield. For additional help, contact your nearest agrovet",
+      "sw": "Asante kwa kutumia huduma yetu $name, tunatumaini habari hii itasaidia kuboresha mavuno yako. Kwa maelezo zaidi, wasiliana na duka la kilimo iliyo karibu nawe"
+    },
+    "extendedQuerying": {},
+    "fields": [
+      {
+        "name": "crop",
+        "required": true,
+        "primary": true,
+        "description_en": "crop for search",
+        "description_sw": "mmea ya kutafuta habari",
+        "isQueryable": true,
+        "isProperty": true,
+        "prompts": [
+          {
+            "language": "en",
+            "multiplePrompt": "Which of these crops are you interested in, $entities or all of them?",
+            "singlePrompt": "Is your $hints the crop on your farm you want chemicals and fertilizers information for?",
+            "singleOptionAvailable": "Would you like to continue with $singleProperty or end this conversation?",
+            "multipleSelected": "Great! Starting with $crop, we will give you information on chemicals and fertilizers .",
+            "singleSelected": "$crop it is $name!",
+            "confirmationPrompt": "I did not understand your message. Please confirm the crop you would like to get information for.",
+            "promptIfMissing": "Which of your crops, $userProperties, would you like chemicals and fertilizers information on?",
+            "promptWithHints": "Which of these crops would you like information on; $supportedProperties?",
+            "invalidConfirmation": "$name, kindly confirm whether you want to continue with $crop or end conversation",
+            "unsupportedProperty": "You mentioned that you have planted $userProperties. However, I can give chemicals and fertilizers information for $supportedProperties at the moment.",
+            "noSupportedProperty": "You mentioned that you have planted $userProperties which I do not have $description for yet.",
+            "introducedProperty": "Have you recently planted $introducedProperty on your farm?",
+            "hint": "The first message you will receive asks you which crop you are interested in among the crops that are supported"
+          },
+          {
+            "language": "sw",
+            "multiplePrompt": "Ni ipi kati ya mmea haya ungependa kupata ushauri, $entities au wote?",
+            "singlePrompt": "Je, ungependa ushauri kuhusu ukulima bora wa mmea wako wa $hints?",
+            "singleOptionAvailable": "Je, ungependa kupata ushauri kuhusu $singleProperty au kukatiza mazungumzo haya?",
+            "multipleSelected": "Asante $name. Tutaenda kwa njia taratibu kuanzia na $crop.",
+            "singleSelected": "Sawa kabisa $name!",
+            "confirmationPrompt": "Sikuweza kuelewa ujumbe wako. Tafadhali thibitisha mmea ambayo ungependa kupata ushauri",
+            "promptIfMissing": "Ungependa elimu wa mmea gani?",
+            "promptWithHints": "$name, ungependa ushauri katika mmea gani kati ya haya; $supportedProperties?",
+            "invalidConfirmation": "$name, naomba ubainishe kama wataka kuendelea na mmea wa $crop au kumaliza majadiliano",
+            "unsupportedProperty": "Ulitueleza ya kwamba umepanda $userProperties lakini kwa sasa nitaweza kukusaidia na elimu ya $supportedProperties.",
+            "noSupportedProperty": "Ulitueleza ya kwamba umepanda $userProperties lakini kwa sasa sina habari kuhusu $description.",
+            "introducedProperty": "Je, umepanda mmea wa $introducedProperty shambani mwako?",
+            "hint": "Ujumbe wa kwanza utakayopokea itakuuliza ni mmea gani ungependa ushauri kati ya mimea ambayo yanawakilishwa"
+          }
+        ],
+        "tags": [
+          {
+            "name": "potatoes"
+          },
+          {
+            "name": "viazi"
+          }
+        ],
+        "expectedInput": [
+          "text"
+        ]
+      },
+      {
+        "name": "question",
+        "required": true,
+        "primary": false,
+        "description_en": "information to search",
+        "description_sw": "kutafuta ushauri",
+        "isQueryable": false,
+        "isProperty": false,
+        "prompts": [
+          {
+            "language": "en",
+            "multiplePrompt": "Which of these group of products are you interested in, $entities or all of them?",
+            "singlePrompt": "Please type your question?",
+            "singleOptionAvailable": "We currently have $singleProperty that would match your intestest. Would you like to go through the list or end this conversation?",
+            "multipleSelected": "Great! Starting with $cluster, we will give you product information.",
+            "singleSelected": "$cluster it is $name!",
+            "confirmationPrompt": "I did not understand your message. Please confirm the group of chemicals you would like to get information for.",
+            "promptIfMissing": "Please type your question",
+            "promptWithHints": "Please type your question",
+            "noSupportedProperty": "",
+            "invalidConfirmation": "$name, kindly confirm whether you want to continue with $cluster or end conversation",
+            "hint": "To get good results, please ensure that your question describes the item you are seeking information on."
+          },
+          {
+            "language": "sw",
+            "multiplePrompt": "Ni ipi kati ya mmea haya ungependa kupata ushauri, $entities au wote?",
+            "singlePrompt": "Je, ungependa ushauri kuhusu ukulima bora wa mmea wako wa $hints?",
+            "singleOptionAvailable": "Je, ungependa kupata ushauri kuhusu $singleProperty au kukatiza mazungumzo haya?",
+            "multipleSelected": "Asante $name. Tutaenda kwa njia taratibu kuanzia na $crop.",
+            "singleSelected": "Sawa kabisa $name!",
+            "confirmationPrompt": "Sikuweza kuelewa ujumbe wako. Tafadhali thibitisha mmea ambayo ungependa kupata ushauri",
+            "promptIfMissing": "Ungependa elimu wa mmea gani?",
+            "promptWithHints": "Tafadhali andika swali lako",
+            "invalidConfirmation": "$name, naomba ubainishe kama wataka kuendelea na mmea wa $crop au kumaliza majadiliano?",
+            "noSupportedProperty": "",
+            "unsupportedProperty": "Ulitueleza ya kwamba umepanda $userProperties lakini kwa sasa nitaweza kukusaidia na elimu ya $supportedProperties.",
+            "introducedProperty": "Je, umepanda mmea wa $introducedProperty shambani mwako?",
+            "hint": "Ili kupata matokeo mazuri, tafadhali hakikisha kwamba swali lako linaelezea zaidi kile ambacho ungependa kupata ushauri."
+          }
+        ]
+      }
+    ],
+    "tags": {},
+    "content_options_en": [
+      "$name, you will receive $count message(s) with matching products"
+    ],
+    "content_options_sw": [
+      "Asante $name, utapokea ujumbe $count fupi yenye mawaidha bidhaa "
+    ],
+    "system": "false",
+    "live": "true",
+    "id": "4f37ff9a-a689-421f-88c9-91afdc7c239c"
+  },
+  {
+    "name": "Crop Advisory",
+    "type": "tree",
+    "description_en": "crop advisory",
+    "description_sw": "ushauri wa mazao",
+    "default_prompt_en": "",
+    "default_prompt_sw": "",
+    "unable_to_assist_en": "Unfortunately I am not able to help you at the moment but we are working hard to update our knowledge as often as possible. Please check with us again later.",
+    "unable_to_assist_sw": "Samahani sina uwezo wa kukusaidia kwa sasa lakini ninafanya juhudi mara kwa mara ili kuongeza maarifa yangu iwezekanavyo. Tafadhali jaribu kuwasiliana nasi tena baadaye",
+    "confirm_entity_en": "",
+    "confirm_entity_sw": "",
+    "multiple_primary_entities_en": "",
+    "multiple_primary_entities_sw": "",
+    "no_results_en": "",
+    "no_results_sw": "",
+    "conclusion": {
+      "en": "Thank you for using our service $name, we hope this information will help improve your yield. For additional help, call or send text to 0709937000",
+      "sw": "Asante kwa kutumia huduma yetu $name, tunatumaini habari hii itasaidia kuboresha mavuno yako. Kwa maelezo zaidi, piga simu au tuma ujumbe mfupi(sms) kwa 0709937000"
+    },
+    "extendedQuerying": {},
+    "fields": [
+      {
+        "name": "crop",
+        "required": true,
+        "primary": true,
+        "description_en": "crop for advisory",
+        "description_sw": "mmea uliyochagua",
+        "isQueryable": true,
+        "isProperty": true,
+        "prompts": [
+          {
+            "language": "en",
+            "multiplePrompt": "",
+            "singlePrompt": "",
+            "singleOptionAvailable": "",
+            "multipleSelected": "",
+            "singleSelected": "",
+            "confirmationPrompt": "I did not understand your message. Please confirm the crop you would like to get information for.",
+            "promptIfMissing": "Which crop would you like advisory on?",
+            "promptWithHints": "Which of these crops would you like advisory on; $supportedProperties?",
+            "invalidConfirmation": "$name, kindly confirm whether you want to continue with $crop or end conversation",
+            "unsupportedProperty": "",
+            "noSupportedProperty": "",
+            "introducedProperty": "",
+            "hint": "I will now ask you which crop you would like advisory on among the crops that are supported"
+          },
+          {
+            "language": "sw",
+            "multiplePrompt": "",
+            "singlePrompt": "",
+            "singleOptionAvailable": "",
+            "multipleSelected": "",
+            "singleSelected": "",
+            "confirmationPrompt": "Sikuweza kuelewa ujumbe wako. Tafadhali thibitisha mmea ambayo ungependa kupata ushauri",
+            "promptIfMissing": "Ungependa elimu wa mmea gani?",
+            "promptWithHints": "$name, ungependa elimu katika mmea gani kati ya haya; $supportedProperties?",
+            "invalidConfirmation": "$name, naomba ubainishe kama wataka kuendelea na mmea wa $crop au kumaliza majadiliano",
+            "unsupportedProperty": "",
+            "noSupportedProperty": "",
+            "introducedProperty": "",
+            "hint": "Sasa ningependa kuuliza ni mmea gani ungependa kupata ushauri juu yake kati ya mimea ambayo yanawakilishwa"
+          }
+        ],
+        "tags": [
+          {
+            "name": "maize"
+          },
+          {
+            "name": "tomatoes"
+          },
+          {
+            "name": "potatoes"
+          },
+          {
+            "name": "mahindi"
+          },
+          {
+            "name": "nyanya"
+          },
+          {
+            "name": "viazi"
+          }
+        ],
+        "expectedInput": [
+          "text"
+        ]
+      },
+      {
+        "name": "section",
+        "required": true,
+        "primary": false,
+        "isQueryable": true,
+        "isProperty": false,
+        "description_en": "crop growing stages and challenges",
+        "description_sw": "awamu ya upanzi",
+        "prompts": [
+          {
+            "language": "en",
+            "multiplePrompt": "Which stage of $crop farming would you like advice on.",
+            "confirmationPrompt": "Please verify your input. '$input' does not appear to be a valid stage of $crop farming?",
+            "promptIfMissing": "",
+            "promptWithHints": "I have information on $supportedProperties. Please select your desired option",
+            "singlePrompt": "",
+            "invalidConfirmation": "",
+            "singleOptionAvailable": "",
+            "singleSelected": "",
+            "noSupportedProperty": "",
+            "multipleSelected": "",
+            "hint": "You will now have a chance to choose which stage you would like to get advice on."
+          },
+          {
+            "language": "sw",
+            "multiplePrompt": "Je! Ungependa ushauri juu ya hatua gani ya kilimo cha mazao yako.",
+            "confirmationPrompt": "Tafadhali thibitisha jibu lako.'$input' haionekani kuwa hatua halali ya kilimo cha $crop?",
+            "promptIfMissing": "",
+            "promptWithHints": "I have information on $supportedProperties. Please select your desired option",
+            "singlePrompt": "",
+            "invalidConfirmation": "",
+            "singleOptionAvailable": "",
+            "singleSelected": "",
+            "noSupportedProperty": "",
+            "multipleSelected": "",
+            "hint": "Sasa utakuwa na nafasi ya kuchagua hatua ambayo ungependa kupata ushauri."
+          }
+        ],
+        "tags": [
+          {
+            "name": "General"
+          },
+          {
+            "name": "Land Preparation"
+          },
+          {
+            "name": "Planting"
+          },
+          {
+            "name": "Crop Management"
+          },
+          {
+            "name": "Harvest management"
+          },
+          {
+            "name": "Post-harvest"
+          },
+          {
+            "name": "Jumla"
+          },
+          {
+            "name": "Maandalizi ya Ardhi"
+          },
+          {
+            "name": "Kupanda"
+          },
+          {
+            "name": "Usimamizi wa mazao"
+          },
+          {
+            "name": "Usimamizi wa mavuno"
+          },
+          {
+            "name": "Baada ya mavuno"
+          }
+        ],
+        "expectedInput": [
+          "text",
+          "integer"
+        ]
+      }
+    ],
+    "tags": {},
+    "content_options_en": [
+      "$name, you will receive $count messages with best practices for $section of $crop farming."
+    ],
+    "content_options_sw": [
+      "Asante $name, utapokea ujumbe $count fupi yenye mawaidha kutumika katika $section wa ukuliwa wa $crop."
+    ],
+    "query_options_en": [
+      "Are you interested in $treeOptions?",
+      "Which of these interest you; $treeOptions?",
+      "Would you like information on $treeOptions?"
+    ],
+    "query_options_sw": [
+      "Je! Ungependa kujua $treeOptions?",
+      "Je! Ni yapi kati ya hizi unaokuvutia; $treeOptions?",
+      "Je! Ungependa habari juu ya  $treeOptions?"
+    ],
+    "system": "false",
+    "live": "true",
+    "id": "bf341fcb-6163-4cea-97ed-2a80b9569936"
+  }]

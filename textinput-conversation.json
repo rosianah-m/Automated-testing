@@ -1,0 +1,5536 @@
+{
+	"tests": [{
+			"title": "End to end maize diagnosis for cutworms",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"maize",
+				"leaf",
+				"holes in the leaves of seedlings",
+				"yes",
+				"young",
+				"yes"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "symptoms"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "content.json",
+					"id": "f634e0d6-0897-4a9e-9b46-bb0ad6c98448",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "f634e0d6-0897-4a9e-9b46-bb0ad6c98448",
+					"property": "neighbour.question_en"
+				},
+				{
+					"file": "content.json",
+					"id": "f634e0d6-0897-4a9e-9b46-bb0ad6c98448",
+					"property": "confirmation.text"
+				},
+				{
+					"file": "content.json",
+					"id": "f634e0d6-0897-4a9e-9b46-bb0ad6c98448",
+					"property": "response.text"
+				}
+			]
+		},
+
+		{
+			"title": "End to end maize diagnosis for weevils",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"maize",
+				"cob",
+				"holes in the grain",
+				"no",
+				"yes",
+				"already harvested",
+				"right after storage"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "symptoms"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "content.json",
+					"id": "297f6cfe-3104-4305-9c07-2baddad2f75d",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "345e7ccc-2291-42a1-a8b7-541264561f1f",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "345e7ccc-2291-42a1-a8b7-541264561f1f",
+					"property": "neighbour.question.en"
+				},
+				{
+					"file": "content.json",
+					"id": "345e7ccc-2291-42a1-a8b7-541264561f1f",
+					"property": "confirmation.text"
+				},
+				{
+					"file": "content.json",
+					"id": "345e7ccc-2291-42a1-a8b7-541264561f1f",
+					"property": "response.text"
+				}
+			]
+		},
+
+		{
+			"title": "end to end maize diagnosis for fusarium ear rot",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"maize",
+				"cob",
+				"Yellowish/reddish grains with a white powdery substance",
+				"yes",
+				"signs of rotting",
+				"yes"
+
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "symptoms"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "content.json",
+					"id": "be6627fd-1ed9-45f0-915d-9ce1a14ab64a",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "be6627fd-1ed9-45f0-915d-9ce1a14ab64a",
+					"property": "neighbour.question.en"
+				},
+				{
+					"file": "content.json",
+					"id": "be6627fd-1ed9-45f0-915d-9ce1a14ab64a",
+					"property": "confirmation.text"
+				},
+				{
+					"file": "content.json",
+					"id": "be6627fd-1ed9-45f0-915d-9ce1a14ab64a",
+					"property": "response.text"
+				}
+			]
+		},
+
+		{
+			"title": "end to end maize diagnosis for stalk borer",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"maize",
+				"stalk",
+				"Worms on the stalks",
+				"yes",
+				"yes"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "symptoms"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "content.json",
+					"id": "727a6bea-67a8-4553-9ccc-9a5d47f237a9",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "727a6bea-67a8-4553-9ccc-9a5d47f237a9",
+					"property": "confirmation.text"
+				},
+				{
+					"file": "content.json",
+					"id": "727a6bea-67a8-4553-9ccc-9a5d47f237a9",
+					"property": "response.text"
+				}
+			]
+		},
+
+		{
+			"title": "end to end maize diagnosis for large grain borer",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"maize",
+				"cob",
+				"large holes caused by black insect",
+				"no",
+				"yes",
+				"yes",
+				"yes"
+
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "symptoms"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "content.json",
+					"id": "345e7ccc-2291-42a1-a8b7-541264561f1f",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "297f6cfe-3104-4305-9c07-2baddad2f75d",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "297f6cfe-3104-4305-9c07-2baddad2f75d",
+					"property": "neighbour.question.en"
+				},
+				{
+					"file": "content.json",
+					"id": "297f6cfe-3104-4305-9c07-2baddad2f75d",
+					"property": "confirmation.text"
+				},
+				{
+					"file": "content.json",
+					"id": "297f6cfe-3104-4305-9c07-2baddad2f75d",
+					"property": "response.text"
+				}
+			]
+		},
+
+		{
+			"title": "end to end maize diagnosis for common smut",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"maize",
+				"cob",
+				"growth on the cob with black powdery substance",
+				"yes",
+				"yes"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "symptoms"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "content.json",
+					"id": "53e2ae17-d99f-4303-94b0-5e5e51be2326",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "53e2ae17-d99f-4303-94b0-5e5e51be2326",
+					"property": "confirmation.text"
+				},
+				{
+					"file": "content.json",
+					"id": "53e2ae17-d99f-4303-94b0-5e5e51be2326",
+					"property": "response.text"
+				}
+			]
+		},
+
+		{
+			"title": "end to end maize diagnosis for white grubs",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"maize",
+				"root",
+				"white worms on the roots",
+				"yes",
+				"white",
+				"yes"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "symptoms"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "content.json",
+					"id": "e6e56316-7d82-446d-bf37-4007cf7cbc0e",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "e6e56316-7d82-446d-bf37-4007cf7cbc0e",
+					"property": "neighbour.question_en"
+				},
+				{
+					"file": "content.json",
+					"id": "e6e56316-7d82-446d-bf37-4007cf7cbc0e",
+					"property": "confirmation.text"
+				},
+				{
+					"file": "content.json",
+					"id": "e6e56316-7d82-446d-bf37-4007cf7cbc0e",
+					"property": "response.text"
+				}
+			]
+		},
+
+		{
+			"title": "end to end maize diagnosis for  wireworms",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"maize",
+				"root",
+				"holes in the seed/root",
+				"no",
+				"yes",
+				"yellow/brown",
+				"yes"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "symptoms"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "content.json",
+					"id": "e6e56316-7d82-446d-bf37-4007cf7cbc0e",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "97bdebd1-59c0-4bda-908c-cb8a118c9d7f",
+					"property": "confirmation.text"
+				},
+				{
+					"file": "content.json",
+					"id": "97bdebd1-59c0-4bda-908c-cb8a118c9d7f",
+					"property": "neighbour.question_ent"
+				},
+				{
+					"file": "content.json",
+					"id": "97bdebd1-59c0-4bda-908c-cb8a118c9d7f",
+					"property": "confirmation.text"
+				},
+				{
+					"file": "content.json",
+					"id": "97bdebd1-59c0-4bda-908c-cb8a118c9d7f",
+					"property": "response.text"
+				}
+			]
+		},
+
+		{
+			"title": "end to end maize diagnosis for grey leaf spot",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"maize",
+				"leaf",
+				"rectangular grey to brown spots on the leaves",
+				"no",
+				"yes",
+				"greyish-brownish spots",
+				"yes"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "symptoms"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "content.json",
+					"id": "d68e9bdc-cad4-4825-97fd-cc845d8867c6",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "38e78dde-3dda-439f-8567-2466edd29ad5",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "38e78dde-3dda-439f-8567-2466edd29ad5",
+					"property": "neighbour.question_en"
+				},
+				{
+					"file": "content.json",
+					"id": "38e78dde-3dda-439f-8567-2466edd29ad5",
+					"property": "confirmation.text"
+				},
+				{
+					"file": "content.json",
+					"id": "38e78dde-3dda-439f-8567-2466edd29ad5",
+					"property": "response.text"
+				}
+			]
+		},
+
+		{
+			"title": "end to end maize diagnosis for army worms",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"maize",
+				"leaf",
+				"holes in leaves caused by black caterpillars that move in large groups and destroys almost the whole field",
+				"no",
+				"yes",
+				"mature",
+				"yes"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "symptoms"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "content.json",
+					"id": "f634e0d6-0897-4a9e-9b46-bb0ad6c98448",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "c574cf0c-7e0f-4930-8811-c3beab460f54",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "c574cf0c-7e0f-4930-8811-c3beab460f54",
+					"property": "neighbour.question_en"
+				},
+				{
+					"file": "content.json",
+					"id": "c574cf0c-7e0f-4930-8811-c3beab460f54",
+					"property": "confirmation.text"
+				},
+				{
+					"file": "content.json",
+					"id": "c574cf0c-7e0f-4930-8811-c3beab460f54",
+					"property": "response.text"
+				}
+			]
+		},
+
+		{
+			"title": "end to end maize diagnosis for maize streak virus",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"maize",
+				"leaf",
+				"narrow yellow lines",
+				"yes",
+				"thin narrow lines",
+				"yes"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "symptoms"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "content.json",
+					"id": "d68e9bdc-cad4-4825-97fd-cc845d8867c6",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "d68e9bdc-cad4-4825-97fd-cc845d8867c6",
+					"property": "neighbour.question_en"
+				},
+				{
+					"file": "content.json",
+					"id": "d68e9bdc-cad4-4825-97fd-cc845d8867c6",
+					"property": "confirmation.text"
+				},
+				{
+					"file": "content.json",
+					"id": "d68e9bdc-cad4-4825-97fd-cc845d8867c6",
+					"property": "response.text"
+				}
+			]
+		},
+
+		{
+			"title": "end to end end to end potato diagnosis for late blight",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"potatoes",
+				"leaf",
+				"big brown/grey patch on the leaf",
+				"yes",
+				"yes"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "symptoms"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "content.json",
+					"id": "653d7fe0-4111-4447-b174-4d35593f8977",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "653d7fe0-4111-4447-b174-4d35593f8977",
+					"property": "confirmation.text"
+				},
+				{
+					"file": "content.json",
+					"id": "653d7fe0-4111-4447-b174-4d35593f8977",
+					"property": "response.text"
+				}
+			]
+		},
+
+		{
+			"title": "end to end end to end potato diagnosis for early blight",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"potatoes",
+				"leaf",
+				"brown spots and leaves turning yellow",
+				"yes",
+				"yes"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "symptoms"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "content.json",
+					"id": "db7a56cc-191e-43c5-b867-732180cc4d12",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "db7a56cc-191e-43c5-b867-732180cc4d12",
+					"property": "confirmation.text"
+				},
+				{
+					"file": "content.json",
+					"id": "db7a56cc-191e-43c5-b867-732180cc4d12",
+					"property": "response.text"
+				}
+			]
+		},
+
+		{
+			"title": "end to end end to end potato diagnosis for tuber moth",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"potatoes",
+				"tuber",
+				"white worm with a brown head",
+				"yes",
+				"yes"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "symptoms"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "content.json",
+					"id": "e5a3f064-a077-4171-a8b3-94726f1b8e28",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "e5a3f064-a077-4171-a8b3-94726f1b8e28",
+					"property": "confirmation.text"
+				},
+				{
+					"file": "content.json",
+					"id": "e5a3f064-a077-4171-a8b3-94726f1b8e28",
+					"property": "response.text"
+				}
+			]
+		},
+
+		{
+			"title": "end to end end to end potato diagnosis for aphids",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"potatoes",
+				"leaf",
+				"leaf curling and small green insects",
+				"yes",
+				"yes"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "symptoms"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "content.json",
+					"id": "4756cbe2-362e-45b8-8ec5-e01eab12582a",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "4756cbe2-362e-45b8-8ec5-e01eab12582a",
+					"property": "confirmation.text"
+				},
+				{
+					"file": "content.json",
+					"id": "4756cbe2-362e-45b8-8ec5-e01eab12582a",
+					"property": "response.text"
+				}
+			]
+		},
+
+		{
+			"title": "end to end end to end potato diagnosis for mites",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"potatoes",
+				"leaf",
+				"red insects that look like spiders that cause the leaf to turn red",
+				"yes",
+				"yes"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "symptoms"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "content.json",
+					"id": "c5295010-66ee-41da-ba66-2739f77c89b7",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "c5295010-66ee-41da-ba66-2739f77c89b7",
+					"property": "confirmation.text"
+				},
+				{
+					"file": "content.json",
+					"id": "c5295010-66ee-41da-ba66-2739f77c89b7",
+					"property": "response.text"
+				}
+			]
+		},
+
+		{
+			"title": "end to end end to end potato diagnosis for blackleg",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"potatoes",
+				"backleg",
+				"potato stem has turned to black",
+				"yes",
+				"yes"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "symptoms"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "content.json",
+					"id": "101fc539-d990-45c7-a11c-9ae1f8335286",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "101fc539-d990-45c7-a11c-9ae1f8335286",
+					"property": "confirmation.text"
+				},
+				{
+					"file": "content.json",
+					"id": "101fc539-d990-45c7-a11c-9ae1f8335286",
+					"property": "response.text"
+				}
+			]
+		},
+
+		{
+			"title": "end to end end to end potato diagnosis for growth cracks",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"potatoes",
+				"tuber",
+				"potato is showing signs of cracks or splitting",
+				"yes",
+				"yes"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "symptoms"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "content.json",
+					"id": "d5f78707-afdd-4d89-aa16-a1fa833160b0",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "d5f78707-afdd-4d89-aa16-a1fa833160b0",
+					"property": "confirmation.text"
+				},
+				{
+					"file": "content.json",
+					"id": "d5f78707-afdd-4d89-aa16-a1fa833160b0",
+					"property": "response.text"
+				}
+			]
+		},
+
+		{
+			"title": "end to end end to end potato diagnosis for black heart",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"potatoes",
+				"tuber",
+				"potato is turning black at the center when cut into half",
+				"yes",
+				"yes"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "symptoms"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "content.json",
+					"id": "7e0344af-e721-4a48-a24b-f3108ca5c593",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "7e0344af-e721-4a48-a24b-f3108ca5c593",
+					"property": "confirmation.text"
+				},
+				{
+					"file": "content.json",
+					"id": "7e0344af-e721-4a48-a24b-f3108ca5c593",
+					"property": "response.text"
+				}
+			]
+		},
+
+		{
+			"title": "end to end end to end potato diagnosis for bacterial wilt",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"potatoes",
+				"leaf",
+				"plants have turned yellow and look like they are dying",
+				"yes",
+				"yes"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "symptoms"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "content.json",
+					"id": "ea641ea6-ecdb-46c1-a234-141eccfeb625",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "ea641ea6-ecdb-46c1-a234-141eccfeb625",
+					"property": "confirmation.text"
+				},
+				{
+					"file": "content.json",
+					"id": "ea641ea6-ecdb-46c1-a234-141eccfeb625",
+					"property": "response.text"
+				}
+			]
+		},
+
+		{
+			"title": "end to end end to end potato diagnosis for root-knot nematode",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"potatoes",
+				"tuber",
+				"potato roots are swollen and have things that look like knots",
+				"yes",
+				"yes"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "symptoms"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "content.json",
+					"id": "d2b4e707-500b-498c-a570-34da1ebae055",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "d2b4e707-500b-498c-a570-34da1ebae055",
+					"property": "confirmation.text"
+				},
+				{
+					"file": "content.json",
+					"id": "d2b4e707-500b-498c-a570-34da1ebae055",
+					"property": "response.text"
+				}
+			]
+		},
+
+		{
+			"title": "diagnosis edge case 1",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"potatoes",
+				"h3",
+				"potato roots are swollen and have things that look like knots",
+				"potato roots are swollen and have things that look like knots"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.confirmationPrompt"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "symptoms"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"property": "no_results_en"
+				}
+			]
+		},
+
+		{
+			"title": "diagnosis edge case 2",
+			"questions": [
+				"hi bot",
+				"diagnosis",
+				"maize",
+				"h3",
+				"potato roots are swollen and have things that look like knots",
+				"no",
+				"no",
+				"potato roots are swollen and have things that look like knots"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.confirmationPrompt"
+				},
+				{
+					"file": "content.json",
+					"id": "e6e56316-7d82-446d-bf37-4007cf7cbc0e",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "content.json",
+					"id": "97bdebd1-59c0-4bda-908c-cb8a118c9d7f",
+					"property": "symptoms.text"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"property": "extendedQuerying.en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"property": "no_results_en"
+				}
+			]
+		},
+
+
+		{
+			"title": "Test on crop advisory: growing regions",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"general",
+				"growing regions"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "e9425bb2-eb68-b709-169d-a01c787579ee",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "c0169e99-6e86-4974-b8c2-c4f715fcbd19",
+					"property": "responses.regions.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory: seed variety",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"general",
+				"seed variety"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "c0169e99-6e86-4974-b8c2-c4f715fcbd19",
+					"property": "responses.seeds.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory: climate conditions",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"general",
+				"climate conditions"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "c0169e99-6e86-4974-b8c2-c4f715fcbd19",
+					"property": "responses.climate.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, land preparation: selecting best site",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"land preparation",
+				"selecting best site"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "f1253514-920b-4b94-9e45-aed1e5771afa",
+					"property": "responses.site selection.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, land preparation: ploughing the land",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"land preparation",
+				"ploughing"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "f1253514-920b-4b94-9e45-aed1e5771afa",
+					"property": "responses.ploughing.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, land preparation: weed control",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"land preparation",
+				"weed control"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "f1253514-920b-4b94-9e45-aed1e5771afa",
+					"property": "responses.Weed Control.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, land preparation: seed activation",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"land preparation",
+				"seed activation"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "f1253514-920b-4b94-9e45-aed1e5771afa",
+					"property": "responses.seed activation.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, crop management, diseases, bacterial wilt symptoms",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"CROP MANAGEMENT",
+				"DISEASES",
+				"BACTERIAL WILT",
+				"BACTERIAL WILT SYMPTOMS"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "6164cb3f-a707-4e5b-8617-32be588af7bb",
+					"property": "responses.symptoms.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, crop management, diseases, bacterial wilt solution",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"CROP MANAGEMENT",
+				"DISEASES",
+				"BACTERIAL WILT",
+				"BACTERIAL WILT SOLUTION"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "6164cb3f-a707-4e5b-8617-32be588af7bb",
+					"property": "responses.solution.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, crop management, diseases, potato backleg symptoms",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"CROP MANAGEMENT",
+				"DISEASES",
+				"POTATO BLACKLEG",
+				"POTATO BLACKLEG SYMPTOMS"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "b650685e-d410-4465-afec-edc964d41220",
+					"property": "responses.symptoms.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, crop management, diseases, potato backleg solution",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"CROP MANAGEMENT",
+				"DISEASES",
+				"POTATO BLACKLEG",
+				"POTATO BLACKLEG SOLUTION"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "b650685e-d410-4465-afec-edc964d41220",
+					"property": "responses.solution.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, crop management, diseases, early blight symptoms",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"CROP MANAGEMENT",
+				"DISEASES",
+				"EARLY BLIGHT",
+				"EARLY BLIGHT SYMPTOMS"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "55f3ae33-aaf7-4c38-a805-ebb6f2fd0765",
+					"property": "responses.symptoms.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, crop management, diseases, early blight solution",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"CROP MANAGEMENT",
+				"DISEASES",
+				"EARLY BLIGHT",
+				"EARLY BLIGHT SOLUTION"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "55f3ae33-aaf7-4c38-a805-ebb6f2fd0765",
+					"property": "responses.solution.text"
+				}
+			]
+		},
+
+
+		{
+			"title": "Test on crop advisory, crop management, diseases, late blight symptoms",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"CROP MANAGEMENT",
+				"DISEASES",
+				"LATE BLIGHT",
+				"LATE BLIGHT SYMPTOMS"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "eb32fb63-1192-4f89-a820-207d8989fdf8",
+					"property": "responses.symptoms.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, crop management, diseases, late blight solution",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"CROP MANAGEMENT",
+				"DISEASES",
+				"LATE BLIGHT",
+				"LATE BLIGHT SOLUTION"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "eb32fb63-1192-4f89-a820-207d8989fdf8",
+					"property": "responses.solution.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, crop management, nutrient deficiency, phosphorous deficiency",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"CROP MANAGEMENT",
+				"NUTRIENT DEFICIENCY",
+				"PHOSPHORUS",
+				"PHOSPHORUS DEFICIENCY SYMPTOMS"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "4ee64e1b-aaf8-493d-ba79-8b3c1713efa1",
+					"property": "responses.symptoms.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, crop management, nutrient deficiency, phosphorous deficiency solution",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"CROP MANAGEMENT",
+				"NUTRIENT DEFICIENCY",
+				"PHOSPHORUS",
+				"PHOSPHORUS DEFICIENCY SOLUTION"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "4ee64e1b-aaf8-493d-ba79-8b3c1713efa1",
+					"property": "responses.solution.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, crop management, nutrient deficiency, sulphur deficiency",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"CROP MANAGEMENT",
+				"NUTRIENT DEFICIENCY",
+				"SULPHUR",
+				"SULPHUR DEFICIENCY SYMPTOMS"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "078f8fca-2629-437e-bf2d-cfdfe0e3614b",
+					"property": "responses.symptoms.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, crop management, nutrient deficiency, sulphur deficiency solution",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"CROP MANAGEMENT",
+				"NUTRIENT DEFICIENCY",
+				"SULPHUR",
+				"SULPHUR DEFICIENCY SOLUTION"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "078f8fca-2629-437e-bf2d-cfdfe0e3614b",
+					"property": "responses.solution.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, crop management, nutrient deficiency, magnesium deficiency",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"CROP MANAGEMENT",
+				"NUTRIENT DEFICIENCY",
+				"MAGNESIUM",
+				"MAGNESIUM DEFICIENCY SYMPTOMS"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "6fd181b9-6cb0-41da-9f1d-94572aacd79f",
+					"property": "responses.symptoms.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, crop management, nutrient deficiency, magnesium deficiency solution",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"CROP MANAGEMENT",
+				"NUTRIENT DEFICIENCY",
+				"MAGNESIUM",
+				"MAGNESIUM DEFICIENCY SOLUTION"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "6fd181b9-6cb0-41da-9f1d-94572aacd79f",
+					"property": "responses.solution.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, crop management, nutrient deficiency, calcium deficiency",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"CROP MANAGEMENT",
+				"NUTRIENT DEFICIENCY",
+				"CALCIUM",
+				"CALCIUM DEFICIENCY SYMPTOMS"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "e5d76434-07e5-4003-b314-b8e10e8ccd02",
+					"property": "responses.symptoms.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, crop management, nutrient deficiency, calcium deficiency solution",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"CROP MANAGEMENT",
+				"NUTRIENT DEFICIENCY",
+				"CALCIUM",
+				"CALCIUM DEFICIENCY SOLUTION"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "e5d76434-07e5-4003-b314-b8e10e8ccd02",
+					"property": "responses.solution.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, crop management, nutrient deficiency, nitrogen deficiency",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"CROP MANAGEMENT",
+				"NUTRIENT DEFICIENCY",
+				"NITROGEN",
+				"NITROGEN DEFICIENCY SYMPTOMS"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "07d8ae84-6385-4758-a90c-b928b47e5ac8",
+					"property": "responses.symptoms.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, crop management, nutrient deficiency, nitrogen deficiency solution",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"CROP MANAGEMENT",
+				"NUTRIENT DEFICIENCY",
+				"NITROGEN",
+				"NITROGEN DEFICIENCY SOLUTION"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "07d8ae84-6385-4758-a90c-b928b47e5ac8",
+					"property": "responses.solution.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, crop management, pests, potato tuber moth symptoms",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"CROP MANAGEMENT",
+				"PESTS",
+				"POTATO TUBER MOTH",
+				"POTATO TUBER MOTH SYMPTOMS"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "b315bd5b-67ff-4291-a1b7-7b17d2a60232",
+					"property": "responses.symptoms.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, crop management, pests, potato tuber moth solution",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"CROP MANAGEMENT",
+				"PESTS",
+				"POTATO TUBER MOTH",
+				"POTATO TUBER MOTH SOLUTION"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "b315bd5b-67ff-4291-a1b7-7b17d2a60232",
+					"property": "responses.solution.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, crop management, crop rotation",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"CROP MANAGEMENT",
+				"CROP ROTATION"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "6c1c9c5d-a679-4ce8-9998-393a75245565",
+					"property": "responses.Crop Rotation.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, crop management, plant nutrition",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"CROP MANAGEMENT",
+				"PLANT NUTRITION"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "6c1c9c5d-a679-4ce8-9998-393a75245565",
+					"property": "responses.Plant Nutrition.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, planting, planting period",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"PLANTING",
+				"PLANTING PERIOD"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "82c6c785-55d4-464b-a089-a57f270c256a",
+					"property": "responses.Period.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, planting, CONTROLING SOIL-BORNE INSECTS",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"PLANTING",
+				"CONTROLING SOIL-BORNE INSECTS"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "82c6c785-55d4-464b-a089-a57f270c256a",
+					"property": "responses.Seed Activation and Dressing.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, planting, Spacing",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"PLANTING",
+				"CORRECT SPACING DURING PLANTING"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "82c6c785-55d4-464b-a089-a57f270c256a",
+					"property": "responses.Spacing.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, planting, Fertilizer and Manure Application",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"PLANTING",
+				"APPLYING FERTILIZER"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "82c6c785-55d4-464b-a089-a57f270c256a",
+					"property": "responses.Fertilizer and Manure Application.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, planting, Earthing Up",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"potatoes",
+				"PLANTING",
+				"EARTHING UP"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "82c6c785-55d4-464b-a089-a57f270c256a",
+					"property": "responses.Earthing Up.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, harvest management, appropriate harvest",
+			"questions": [
+				"hi bot",
+				"Crop advisory",
+				"Potatoes",
+				"HARVEST MANAGEMENT",
+				"APPROPRIATE HARVEST TIME/PERIOD"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "2756ed51-8ccb-4365-a59c-0fc57e39b699",
+					"property": "responses.period/time.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, harvest management, dehaulming",
+			"questions": [
+				"hi bot",
+				"Crop advisory",
+				"Potatoes",
+				"HARVEST MANAGEMENT",
+				"Dehaulming"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "2756ed51-8ccb-4365-a59c-0fc57e39b699",
+					"property": "responses.dehaulming.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, harvest management, hardening Off",
+			"questions": [
+				"hi bot",
+				"3",
+				"1",
+				"5",
+				"3"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "2756ed51-8ccb-4365-a59c-0fc57e39b699",
+					"property": "responses.hardening Off.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, post-harvest, drying and curling",
+			"questions": [
+				"hi bot",
+				"Crop advisory",
+				"Potatoes",
+				"POST-HARVEST",
+				"Drying and curling"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "2123b5ef-5eee-49c4-8658-b214ce6a2e3d",
+					"property": "responses.drying/ curling.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, post-harvest, sorting",
+			"questions": [
+				"hi bot",
+				"Crop advisory",
+				"Potatoes",
+				"POST-HARVEST",
+				"Sorting"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "2123b5ef-5eee-49c4-8658-b214ce6a2e3d",
+					"property": "responses.sorting.text"
+				}
+			]
+		},
+
+		{
+			"title": "Test on crop advisory, post-harvest, storing",
+			"questions": [
+				"hi bot",
+				"Crop advisory",
+				"Potatoes",
+				"POST-HARVEST",
+				"Storing"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "section"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "query_options_en"
+				},
+				{
+					"file": "content.json",
+					"id": "2123b5ef-5eee-49c4-8658-b214ce6a2e3d",
+					"property": "responses.storing.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on go back repeatedly",
+			"questions": [
+				"hi bot",
+				"crop advisory",
+				"Go back",
+				"Crop advisory",
+				"Go back",
+				"crop advisory",
+				"Go back",
+				"Crop advisory"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				}
+			]
+		},
+
+		{
+			"title": "test on wrong input once",
+			"questions": [
+				"hi bot",
+				"Diagnosis",
+				"t2",
+				"Diagnosis"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				}, {
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.confirmationPrompt"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				}
+			]
+		},
+
+		{
+			"title": "test on no match",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"What herbicide do I need",
+				"No match"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				}, {
+					"file": "intents.json",
+					"id": "3a97eed5-33ab-62dc-3e3d-129f8f414e12",
+					"filters": {
+						"property": "fields",
+						"name": "part"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "no_results_en"
+				}
+			]
+		},
+
+		{
+			"title": "test on information: weed control",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"herbicides",
+				"weed control"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "f1253514-920b-4b94-9e45-aed1e5771afa",
+					"property": "responses.Weed Control.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on information: Panga SL",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"herbicides",
+				"information about Panga SL "
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "ab553740-a857-46d9-9c19-26004e19fa54",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on fungicides information: Amimax",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"fungicides",
+				"information about amimax"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "d41c1b72-7a55-4762-a23f-0f77eb6c51d8",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+
+		{
+			"title": "test on fertilizers information: Agromaster 16:10:22",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"fertilizer",
+				"information about Agromaster 16:10:22"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "79d64389-5f2b-46a3-9082-8fb1ccf57a05",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on fertilizers information on: POLYFEED (19:19:19)",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"fertilizer",
+				"information about POLYFEED (19:19:19)"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "068299c3-488a-4498-babb-64107e62c4f3",
+					"property": "information.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on fertilizers information on: CALCIPRIL",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"fertilizer",
+				"information about calcipril"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "b9c272b4-5a58-4316-8adf-6815c906894e",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on insecticides information on: rootcap",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"insecticide",
+				"information about rootcap 10 GR"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "275edd14-8c03-4c90-93ab-e4195e258c8d",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on insecticides information on: LEVO 2.4 SL",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"insecticide",
+				"information about LEVO 2.4 SL"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "f7d5bc31-19f8-49f7-a3de-e7fd5f1733d1",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on insecticides information on: AVIRMEC",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"insecticide",
+				"information about AVIRMEC"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "20e181d9-fe86-4316-9756-db188d102881",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on insecticides information on: NISSORUN",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"insecticide",
+				"information about NISSORUN "
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "764e2435-c1b8-4776-9d09-305a7b30816d",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on insecticides information on: RAPID",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"insecticide",
+				"information about RAPID"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "a7ee4ccc-d3e7-40eb-9b1a-473f6f591c37",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on insecticides information on: RADIANT",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"insecticide",
+				"information about RADIANT"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "d10d198a-a84a-44cb-a4e6-e4df9db84e91",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on polyfeed: How to apply polyfeed",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"polyfeed",
+				"How to apply polyfeed"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "068299c3-488a-4498-babb-64107e62c4f3",
+					"property": "responses.application.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on polyfeed: information about polyfeed",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"polyfeed",
+				"information about polyfeed"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "068299c3-488a-4498-babb-64107e62c4f3",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on Growcal: How to apply growcal",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"growcal",
+				"How to apply growcal"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "04cb764a-6a27-4995-81c8-df9fb7931fe5",
+					"property": "responses.application.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on growcal: information about growcal",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"growcal",
+				"information about growcal"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "04cb764a-6a27-4995-81c8-df9fb7931fe5",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on Agromaster: How to apply Agromaster",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"Agromaster",
+				"How to apply Agromaster"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "79d64389-5f2b-46a3-9082-8fb1ccf57a05",
+					"property": "responses.application.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on Agromaster: information about Agromaster",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"Agromaster",
+				"information about Agromaster"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "79d64389-5f2b-46a3-9082-8fb1ccf57a05",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on LEVO 2.4 SL: How to apply LEVO 2.4 SL",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"LEVO 2.4 SL",
+				"How to apply LEVO 2.4 SL"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "f7d5bc31-19f8-49f7-a3de-e7fd5f1733d1",
+					"property": "responses.application.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on LEVO 2.4 SL: information about LEVO 2.4 SL",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"LEVO 2.4 SL",
+				"information about LEVO 2.4 SL"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "f7d5bc31-19f8-49f7-a3de-e7fd5f1733d1",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on ROOTCAP: How to apply ROOTCAP",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"ROOTCAP",
+				"How to apply ROOTCAP"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "275edd14-8c03-4c90-93ab-e4195e258c8d",
+					"property": "responses.application.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on ROOTCAP: information about ROOTCAP",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"ROOTCAP",
+				"information about ROOTCAP"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "275edd14-8c03-4c90-93ab-e4195e258c8d",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on AVIRMEC: How to apply AVIRMEC",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"AVIRMEC",
+				"How to apply AVIRMEC"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "20e181d9-fe86-4316-9756-db188d102881",
+					"property": "responses.application.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on AVIRMEC: information about AVIRMEC",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"AVIRMEC",
+				"information about AVIRMEC"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "20e181d9-fe86-4316-9756-db188d102881",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on NISSORUN: How to apply NISSORUN",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"NISSORUN",
+				"How to apply NISSORUN"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "764e2435-c1b8-4776-9d09-305a7b30816d",
+					"property": "responses.application.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on NISSORUN: information about NISSORUN",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"NISSORUN",
+				"information about NISSORUN"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "764e2435-c1b8-4776-9d09-305a7b30816d",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on RAPID: How to apply RAPID",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"RAPID",
+				"How to apply RAPID"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "a7ee4ccc-d3e7-40eb-9b1a-473f6f591c37",
+					"property": "responses.application.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on RAPID: information about RAPID",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"RAPID",
+				"information about RAPID"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "a7ee4ccc-d3e7-40eb-9b1a-473f6f591c37",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+
+		{
+			"title": "test on RADIANT: How to apply RADIANT",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"RADIANT",
+				"How to apply RADIANT"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "d10d198a-a84a-44cb-a4e6-e4df9db84e91",
+					"property": "responses.application.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on RADIANT: information about RADIANT",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"RADIANT",
+				"information about RADIANT"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "d10d198a-a84a-44cb-a4e6-e4df9db84e91",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on VICTORY: How to apply VICTORY",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"VICTORY",
+				"How to apply VICTORY"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "54670a79-f765-4563-9148-e61d1d953442",
+					"property": "responses.application.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on VICTORY: information about VICTORY",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"VICTORY",
+				"information about VICTORY"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "54670a79-f765-4563-9148-e61d1d953442",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on METACOP: How to apply METACOP",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"METACOP",
+				" ow to apply METACOP"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "94005dd5-e0f1-4c0a-9c1b-ce6d4ced9b28",
+					"property": "responses.application.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on METACOP: information about METACOP",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"METACOP",
+				"information about METACOP"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "94005dd5-e0f1-4c0a-9c1b-ce6d4ced9b28",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on AMIMAX: How to apply AMIMAX",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"AMIMAX",
+				"How to apply AMIMAX"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "d41c1b72-7a55-4762-a23f-0f77eb6c51d8",
+					"property": "responses.application.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on AMIMAX: information about AMIMAX",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"AMIMAX",
+				"information about AMIMAX"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "d41c1b72-7a55-4762-a23f-0f77eb6c51d8",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on PANGA SL: How to apply PANGA SL",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"PANGA SL",
+				"How to apply PANGA SL"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "ab553740-a857-46d9-9c19-26004e19fa54",
+					"property": "responses.application.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on PANGA SL: information about PANGA SL",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"PANGA SL",
+				"information about PANGA SL"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "ab553740-a857-46d9-9c19-26004e19fa54",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+
+		{
+			"title": "test on LINAGAN 50 WP: How to apply LINAGAN 50 WP",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"LINAGAN 50 WP",
+				"How to apply LINAGAN 50 WP"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "e1949437-5272-4f6d-a209-14a390e98295",
+					"property": "responses.application.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on LINAGAN 50 WP: information about LINAGAN 50 WP",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"LINAGAN 50 WP",
+				"information about LINAGAN 50 WP"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "bf341fcb-6163-4cea-97ed-2a80b9569936",
+					"property": "multiple_attributes_en"
+				},
+				{
+					"file": "content.json",
+					"id": "e1949437-5272-4f6d-a209-14a390e98295",
+					"property": "responses.information.text"
+				}
+			]
+		},
+
+		{
+			"title": "test on no results",
+			"questions": [
+				"hi bot",
+				"Information",
+				"Potatoes",
+				"How to do irrigation"
+			],
+			"expectedResponses": [{
+					"file": "intents.json",
+					"id": "f2a7e8de-1998-f95f-1f19-c7259415d0f4",
+					"property": "intro_tail_en"
+				},
+				{
+					"file": "intents.json",
+					"id": "4f37ff9a-a689-421f-88c9-91afdc7c239c",
+					"filters": {
+						"property": "fields",
+						"name": "crop"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "4f37ff9a-a689-421f-88c9-91afdc7c239c",
+					"filters": {
+						"property": "fields",
+						"name": "question"
+					},
+					"property": "prompts.promptWithHints"
+				},
+				{
+					"file": "intents.json",
+					"id": "4f37ff9a-a689-421f-88c9-91afdc7c239c",
+					"property": "no_results_en"
+				}
+			]
+		}
+	]
+}
