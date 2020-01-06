@@ -120,9 +120,9 @@ class BotTest(Frame):
 
         json.dump(results, res, indent=4)
         res.close
-#?????????
+    #compare strings
     def string_compare(self,first,second):
-        ratio = difflib.SequenceMatcher(None,first, second).ratio()
+        ratio = difflib.SequenceMatcher(None,first, second).ratio() #ratio returns similarity score between input strings
         isFirstInSecond = second.find(first)
         result = ratio < 0.75 and isFirstInSecond < 0
         # print("First: " + first + " Second: "+ second)
@@ -141,15 +141,15 @@ class BotTest(Frame):
         filtered = {}
 
         json = self.load_json(expectedResponses['file']) #load the file in the conversations eg intents.json
-        match = [i for i in json if i["id"] == expectedResponses['id']][-1] #if id in json matches with the id in the expected conversation
+        match = [i for i in json if i["id"] == expectedResponses['id']][-1] #if id in json file(eg intents) matches with the id in the expected conversation (conversation.json)
         
         #where there are filters
         if "filters" in expectedResponses:
             key = expectedResponses["filters"]["property"]
             match = match[key] #match with the key using the id
             
-            for item in match: #for item in match, 
-                for i in list(expectedResponses["filters"])[1:]:
+            for item in match: #for key(filter, property) 
+                for i in list(expectedResponses["filters"])[1:]: #for any item in list of filters
                     if item[i] == expectedResponses["filters"][i]: #if items in the filters match with the expected response
                         filtered = item 
         else:
@@ -157,11 +157,11 @@ class BotTest(Frame):
         
         keys = expectedResponses["property"].split(".") #split where there's . eg prompts.promptWithHints
 
-    #    Will find a better way to filter this part and make it dynamic ?????????????????????????????
-        if len(keys) > 1:
-            filtered = filtered[keys[0]]
-            if isinstance(filtered,dict):
-                filtered = filtered[keys[1]]
+    #    Will find a better way to filter this part and make it dynamic
+        if len(keys) > 1: #if length of keys is > 1
+            filtered = filtered[keys[0]] #filtered first item in keys
+            if isinstance(filtered,dict): #check if filtered is an instance of dict
+                filtered = filtered[keys[1]] #filtered is the second item of keys
 
         key_results = self.findkeys(filtered, keys[-1]) #call the findkeys func
         return self.remove_placeholders(list(key_results))
@@ -179,7 +179,7 @@ class BotTest(Frame):
         if isinstance(node, list):
             for i in node:
                 for x in self.findkeys(i, kv):
-                    yield x
+                    yield x #return
         elif isinstance(node, dict):
             if kv in node:
                 yield node[kv]
